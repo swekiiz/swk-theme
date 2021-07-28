@@ -116,7 +116,17 @@
 			"name": "JS Template String (``my template string``)",
 			"scope": [
 				"string.quoted.template.js",
-				"punctuation.definition.string.template"
+				"punctuation.definition.string.template",
+			],
+			"settings": {
+				"foreground": "#69f0ae"
+			}
+		},
+		{
+			"name": "React typescript import string",
+			"scope": [
+				"meta.import.tsx string.quoted.single.tsx",
+				"meta.import.tsx string.quoted.double.tsx"
 			],
 			"settings": {
 				"foreground": "#69f0ae"
@@ -220,6 +230,16 @@
 			}
 		},
 		{
+			"name": "React (jsx, tsx) default keyword",
+			"scope": [
+				"keyword.control.default.jsx",
+				"keyword.control.default.tsx"
+			],
+			"settings": {
+				"foreground": "#f7d064"
+			}
+		},
+		{
 			"name": "js operator.arithmetic ( +, -, *, / )",
 			"scope": [
 				"keyword.operator.arithmetic"
@@ -243,7 +263,7 @@
 				"keyword.operator.assignment"
 			],
 			"settings": {
-				"foreground": "#ff0005"
+				"foreground": "#FF5E5E"
 			}
 		},
 		{
@@ -317,13 +337,21 @@
 			"name": "js/ts Keyword",
 			"scope": [
 				"keyword.operator.expression.instanceof",
-				"keyword.operator.new",
 				"keyword.operator.ternary",
 				"keyword.operator.optional",
 				"keyword.operator.expression.keyof"
 			],
 			"settings": {
 				"foreground": "#FF5E5E"
+			}
+		},
+		{
+			"name": "js/ts new keyword ( new )",
+			"scope": [
+				"keyword.operator.new",
+			],
+			"settings": {
+				"foreground": "#b9ff5e"
 			}
 		},
 		{
@@ -516,15 +544,15 @@
 				"foreground": "#D0B344"
 			}
 		},
-		{
-			"name": "Another variable",
-			"scope": [
-				"variable.other.object"
-			],
-			"settings": {
-				"foreground": "#b4aea3"
-			}
-		},
+		// {
+		// 	"name": "Another variable",
+		// 	"scope": [
+		// 		"variable.other.object"
+		// 	],
+		// 	"settings": {
+		// 		"foreground": "#b4aea3"
+		// 	}
+		// },
 		{
 			"name": "Parameter of function",
 			"scope": "variable.parameter",
@@ -1530,6 +1558,13 @@
 		 *  --------------------------------------------------------------------------------
 		 */
 		{
+			"name": "js/ts global object",
+			"scope": "support.type.object",
+			"settings": {
+				"foreground": "#8cdaff",
+			}
+		},
+		{
 			"name": "js/ts console",
 			"scope": "support.type.object.console",
 			"settings": {
@@ -1545,9 +1580,19 @@
 		},
 		{
 			"name": "js/ts module",
-			"scope": "support.module.node,support.type.object.module,support.module.node",
+			"scope": [
+				"support.module.node",
+				"support.module.node"
+			],
 			"settings": {
 				"foreground": "#ec407a"
+			}
+		},
+		{
+			"name": "js/ts module",
+			"scope": "support.type.object.module",
+			"settings": {
+				"foreground": "#b9b088"
 			}
 		},
 		{
@@ -1748,7 +1793,7 @@
 				"support.class.builtin.js"
 			],
 			"settings": {
-				"foreground": "#8CDAFF"
+				"foreground": "#8cb0ff"
 			}
 		},
 		{
