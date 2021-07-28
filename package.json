@@ -1,21 +1,53 @@
 {
-    "name": "swk-theme",
-    "displayName": "swk-theme",
-    "description": "",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.58.0"
-    },
-    "categories": [
-        "Themes"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "swk-theme",
-                "uiTheme": "vs-dark",
-                "path": "./themes/swk-theme-color-theme.json"
-            }
-        ]
+  "name": "swk-theme",
+  "displayName": "swk-theme",
+  "description": "This theme create for fun.",
+  "publisher": "swekiiz",
+  "author": {
+    "name": "swekiiz"
+  },
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swekiiz/swk-theme"
+  },
+  "bugs": {
+    "url": "https://github.com/swekiiz/swk-theme/issues"
+  },
+  "engines": {
+    "vscode": "^1.58.0"
+  },
+  "galleryBanner": {
+    "color": "#020202",
+    "theme": "dark"
+  },
+  "icon": "assets/icons/black-cat.png",
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "swekiiz",
+    "Full black theme",
+    "Black theme",
+    "Black",
+    "Full dark theme",
+    "Dark theme",
+    "Dark"
+  ],
+  "badges": [
+    {
+      "url": "https://img.shields.io/badge/%40-swekiiz-orange",
+      "href": "https://github.com/swekiiz",
+      "description": "Support me <3"
     }
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "swk-theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/swk-theme-color-theme.json"
+      }
+    ]
+  }
 }
