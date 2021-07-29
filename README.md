@@ -4,7 +4,7 @@
 
 A Visual Studio Code theme for the swk-theme out there.
 
-As of 1.0.0, there's a swk-theme too! Color balanced from the Dark version for easy viewing.
+As of 1.0.1, there's a swk-theme too! Color balanced from the Dark version for easy viewing.
 
 ## Installation
 
