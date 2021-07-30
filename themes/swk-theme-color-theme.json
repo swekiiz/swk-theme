@@ -58,6 +58,20 @@
 				"foreground": "#6D6D6D",
 			}
 		},
+		{
+			"name": "ts: triple slash comment",
+			"scope": "source.ts comment.line.triple-slash.directive.ts punctuation.definition.comment.ts",
+			"settings": {
+				"foreground": "#6164ff",
+			}
+		},
+		{
+			"name": "ts: triple slash tag",
+			"scope": "source.ts comment.line.triple-slash.directive.ts meta.tag.ts punctuation.definition.tag.directive.ts",
+			"settings": {
+				"foreground": "#61abff",
+			}
+		},
 		// {
 		// 	"name": "Comment Markup Link",
 		// 	"scope": "comment markup.link",
@@ -197,13 +211,13 @@
 		// 		"foreground": "#6089B4"
 		// 	}
 		// },
-		// {
-		// 	"name": "Tag Attribute",
-		// 	"scope": "meta.tag punctuation.definition.string ",
-		// 	"settings": {
-		// 		"foreground": "#d04d44"
-		// 	}
-		// },
+		{
+			"name": "Tag Attribute",
+			"scope": "meta.tag punctuation.definition.string ",
+			"settings": {
+				"foreground": "#d0b340"
+			}
+		},
 		// {
 		// 	"name": "python placeholder reset to normal string",
 		// 	"scope": "constant.character.format.placeholder.other.python",
@@ -255,13 +269,13 @@
 				"foreground": "#9575cd"
 			}
 		},
-		// {
-		// 	"name": "Operators",
-		// 	"scope": "keyword.operator",
-		// 	"settings": {
-		// 		"foreground": "#FF5E5E"
-		// 	}
-		// },
+		{
+			"name": "Operators",
+			"scope": "keyword.operator",
+			"settings": {
+				"foreground": "#FF5E5E"
+			}
+		},
 		{
 			"name": "Import module JS",
 			"scope": [
@@ -274,7 +288,9 @@
 		{
 			"name": "React (jsx, tsx) default keyword",
 			"scope": [
+				"keyword.control.default.js",
 				"keyword.control.default.jsx",
+				"keyword.control.default.ts",
 				"keyword.control.default.tsx"
 			],
 			"settings": {
@@ -342,14 +358,14 @@
 			"name": "arrow function operator ( => )",
 			"scope": "storage.type.function.arrow",
 			"settings": {
-				"foreground": "#eaff2a"
+				"foreground": "#ffff00"
 			}
 		},
 		{
 			"name": "spread operator ( ... )",
 			"scope": "keyword.operator.spread",
 			"settings": {
-				"foreground": "#f5976c"
+				"foreground": "#FF5E5E"
 			}
 		},
 		{
@@ -367,12 +383,29 @@
 			}
 		},
 		{
+			"name": "js, ts, jsx, tsx: (`=`) assignment operator",
+			"scope": "meta.tag keyword.operator.assignment",
+			"settings": {
+				"foreground": "#d64f4f"
+			}
+		},
+		{
 			"name": "Accessor Operator (`.`)",
 			"scope": [
 				"punctuation.accessor"
 			],
 			"settings": {
 				"foreground": "#ff379b"
+			}
+		},
+		{
+			"name": "ts, tsx: semicolon (`;`)",
+			"scope": [
+				"punctuation.terminator.statement.ts",
+				"punctuation.terminator.statement.tsx"
+			],
+			"settings": {
+				"foreground": "#ffdddd"
 			}
 		},
 		{
@@ -420,17 +453,17 @@
 			}
 		},
 		{
-			"name": "Keyword Control At Rule (`@mixin`, `@import`, etc.)",
-			"scope": "keyword.control.at-rule,keyword.control.at-rule punctuation",
+			"name": "Global Keyword Control At Rule (`@mixin`, `@import`, etc.)",
+			"scope": "keyword.control.at-rule",
 			"settings": {
 				"foreground": "#97c0bd"
 			}
 		},
 		{
-			"name": "Keyword Control Include At Rule (`@include`)",
-			"scope": "keyword.control.at-rule.include,keyword.control.at-rule.include punctuation",
+			"name": "Keyword Control At Rule (`@mixin`, `@import`, etc.)",
+			"scope": "keyword.control.at-rule punctuation",
 			"settings": {
-				"foreground": "#fc5454",
+				"foreground": "#f4e8ff"
 			}
 		},
 		{
@@ -622,7 +655,7 @@
 				"meta.object-literal.key"
 			],
 			"settings": {
-				"foreground": "#eeeeee"
+				"foreground": "#b3b7da"
 			}
 		},
 		{
@@ -1089,6 +1122,20 @@
 			"settings": {
 				"fontStyle": "italic bold",
 				"foreground": "#d9ff00"
+			}
+		},
+		{
+			"name": "CSS: @include",
+			"scope": "keyword.control.at-rule.include",
+			"settings": {
+				"foreground": "#fc5454",
+			}
+		},
+		{
+			"name": "CSS: @extend",
+			"scope": "keyword.control.at-rule.extend",
+			"settings": {
+				"foreground": "#c77db1",
 			}
 		},
 		{
