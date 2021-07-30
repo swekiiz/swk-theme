@@ -75,6 +75,13 @@
 			}
 		},
 		{
+			"name": "JS string double quoted",
+			"scope": "string.quoted.double.js",
+			"settings": {
+				"foreground": "#69f0ae"
+			}
+		},
+		{
 			"name": "String unquoted",
 			"scope": "string.unquoted",
 			"settings": {
@@ -419,13 +426,6 @@
 			}
 		},
 		{
-			"name": "Units",
-			"scope": "keyword.other.unit",
-			"settings": {
-				"foreground": "#FF5E5E"
-			}
-		},
-		{
 			"name": "js template literals begin",
 			"scope": [
 				"keyword.other.template.begin"
@@ -564,6 +564,15 @@
 			"name": "JS Function parameter",
 			"scope": [
 				"variable.parameter.js"
+			],
+			"settings": {
+				"foreground": "#FF5E5E"
+			}
+		},
+		{
+			"name": "JS Function parameter in object ex. { func: (param) => null}",
+			"scope": [
+				"meta.function.json.arrow.js meta.function.parameters.js"
 			],
 			"settings": {
 				"foreground": "#FF5E5E"
@@ -865,6 +874,43 @@
 			}
 		},
 		{
+			"name": "Units",
+			"scope": [
+				"keyword.other.unit"
+			],
+			"settings": {
+				"foreground": "#51a2ff"
+			}
+		},
+		{
+			"name": "px unit",
+			"scope": [
+				"keyword.other.unit.px"
+			],
+			"settings": {
+				"foreground": "#e9806d"
+			}
+		},
+		{
+			"name": "% unit",
+			"scope": [
+				"keyword.other.unit.percentage"
+			],
+			"settings": {
+				"foreground": "#6de9b5"
+			}
+		},
+		{
+			"name": "vw, vh unit",
+			"scope": [
+				"keyword.other.unit.vw",
+				"keyword.other.unit.vh"
+			],
+			"settings": {
+				"foreground": "#c16cfa"
+			}
+		},
+		{
 			"name": "sass selector",
 			"scope": "selector.sass",
 			"settings": {
@@ -890,10 +936,34 @@
 			}
 		},
 		{
+			"name": "CSS: Function ex. ( calc, transitoion )",
+			"scope": [
+				"meta.property-value support.function.misc"
+			],
+			"settings": {
+				"foreground": "#ffa807"
+			}
+		},
+		{
 			"name": "CSS: Important Keyword",
 			"scope": "keyword.other.important",
 			"settings": {
-				"fontStyle": "bold"
+				"fontStyle": "italic bold",
+				"foreground": "#d9ff00"
+			}
+		},
+		{
+			"name": "CSS: @media",
+			"scope": "keyword.control.at-rule.media",
+			"settings": {
+				"foreground": "#23c566"
+			}
+		},
+		{
+			"name": "CSS: @mixin",
+			"scope": "keyword.control.at-rule.mixin",
+			"settings": {
+				"foreground": "#eeff00"
 			}
 		},
 		{
@@ -938,13 +1008,13 @@
 		// 		"foreground": "#d19a66"
 		// 	}
 		// },
-		// {
-		// 	"name": "css color standard name",
-		// 	"scope": "support.constant.color.w3c-standard-color-name.css,support.constant.color.w3c-standard-color-name.scss",
-		// 	"settings": {
-		// 		"foreground": "#d19a66"
-		// 	}
-		// },
+		{
+			"name": "css color standard name",
+			"scope": "support.constant.color.w3c-standard-color-name.css,support.constant.color.w3c-standard-color-name.scss",
+			"settings": {
+				"foreground": "#8080fe" // f080ff 
+			}
+		},
 		// {
 		// 	"name": "css attribute-name.id",
 		// 	"scope": "support.constant.color.w3c-standard-color-name.css",
