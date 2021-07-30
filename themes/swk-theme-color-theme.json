@@ -3,30 +3,39 @@
 	"name": "swk-theme",
 	"type": "dark",
 	"author": "swekiiz",
-	// "semanticHighlighting": true,
-	// "semanticTokenColors": {
-	// 	"enumMember": {
-	// 		"foreground": "#56b6c2"
-	// 	},
-	// 	"variable.constant": {
-	// 		"foreground": "#d19a66"
-	// 	},
-	// 	"variable.defaultLibrary": {
-	// 		"foreground": "#e5c07b"
-	// 	},
-	// 	"variable:dart": {
-	// 		"foreground": "#d19a66"
-	// 	},
-	// 	"property:dart": {
-	// 		"foreground": "#d19a66"
-	// 	},
-	// 	"annotation:dart": {
-	// 		"foreground": "#d19a66"
-	// 	},
-	// 	"parameter.label:dart": {
-	// 		"foreground": "#abb2bf"
-	// 	}
-	// },
+	"semanticHighlighting": false,
+	"semanticTokenColors": {
+		"parameter:cpp": {
+			"foreground": "#cfcfcf"
+		},
+		"namespace:cpp": {
+			"foreground": "#d1c7bd"
+		},
+		"property": {
+			"foreground": "#d5f34f"
+		}
+		// "enumMember": {
+		// 	"foreground": "#56b6c2"
+		// },
+		// "variable.constant": {
+		// 	"foreground": "#d19a66"
+		// },
+		// "variable.defaultLibrary": {
+		// 	"foreground": "#e5c07b"
+		// },
+		// "variable:dart": {
+		// 	"foreground": "#d19a66"
+		// },
+		// "property:dart": {
+		// 	"foreground": "#d19a66"
+		// },
+		// "annotation:dart": {
+		// 	"foreground": "#d19a66"
+		// },
+		// "parameter.label:dart": {
+		// 	"foreground": "#abb2bf"
+		// }
+	},
 	"tokenColors": [
 		/** --------------------------------------------------------------------------------
 		 *  * Comments
@@ -75,10 +84,27 @@
 			}
 		},
 		{
-			"name": "JS string double quoted",
+			"name": "JS: string double quoted",
 			"scope": "string.quoted.double.js",
 			"settings": {
 				"foreground": "#69f0ae"
+			}
+		},
+		{
+			"name": "TS: string double quoted",
+			"scope": "string.quoted.double.ts",
+			"settings": {
+				"foreground": "#69f0ae"
+			}
+		},
+		{
+			"name": "C++: string double quoted",
+			"scope": [
+				"string.quoted.double.cpp",
+				"string.quoted.double.c"
+			],
+			"settings": {
+				"foreground": "#e0ae24"
 			}
 		},
 		{
@@ -350,6 +376,15 @@
 			}
 		},
 		{
+			"name": "python: (`.`) operator",
+			"scope": [
+				"punctuation.separator.period.python"
+			],
+			"settings": {
+				"foreground": "#ff00bf"
+			}
+		},
+		{
 			"name": "js/ts Keyword",
 			"scope": [
 				"keyword.operator.expression.instanceof",
@@ -471,12 +506,70 @@
 			}
 		},
 		{
+			"name": "python: class keyword",
+			"scope": [
+				"storage.type.class.python"
+			],
+			"settings": {
+				"foreground": "#e991ec"
+			}
+		},
+		{
+			"name": "python: lambda keyword",
+			"scope": [
+				"storage.type.function.lambda.python"
+			],
+			"settings": {
+				"foreground": "#aedb33"
+			}
+		},
+		{
+			"name": "C++: ( # )",
+			"scope": [
+				"punctuation.definition.directive.cpp",
+				"punctuation.definition.directive.c"
+			],
+			"settings": {
+				"foreground": "#86f870"
+			}
+		},
+		{
+			"name": "C++: operator",
+			"scope": [
+				"source.cpp keyword.operator",
+				"source.c keyword.operator"
+			],
+			"settings": {
+				"foreground": "#f15050"
+			}
+		},
+		{
 			"name": "C++: using keyword",
 			"scope": [
 				"keyword.other.using.directive.cpp"
 			],
 			"settings": {
 				"foreground": "#f15050"
+			}
+		},
+		{
+			"name": "C++: struct keyword",
+			"scope": [
+				"storage.type.struct.cpp",
+				"storage.type.struct.c"
+			],
+			"settings": {
+				"foreground": "#fce941"
+			}
+		},
+		{
+			"name": "C++: return keyword",
+			"scope": [
+				"keyword.control.return.cpp",
+				"keyword.control.return.c"
+			],
+			"settings": {
+				"foreground": "#91c088"
 			}
 		},
 		/** --------------------------------------------------------------------------------
@@ -487,7 +580,6 @@
 			"name": "Property of Variable",
 			"scope": "variable.other.property",
 			"settings": {
-				"fontStyle": "",
 				"foreground": "#8d6e63"
 			}
 		},
@@ -712,6 +804,16 @@
 			],
 			"settings": {
 				"foreground": "#fffb2a"
+			}
+		},
+		{
+			"name": "C++: Storage Type",
+			"scope": [
+				"source.cpp storage.type",
+				"source.c storage.type"
+			],
+			"settings": {
+				"foreground": "#df7a1c"
 			}
 		},
 		{
@@ -1870,6 +1972,13 @@
 				"foreground": "#ee894e"
 			}
 		},
+		// {
+		// 	"name": "C++: Namespaces",
+		// 	"scope": "source.cpp entity.name.namespace",
+		// 	"settings": {
+		// 		"foreground": "#fdde2f"
+		// 	}
+		// },
 		{
 			"name": "Class name php",
 			"scope": "variable.other.class.php",
@@ -2084,8 +2193,15 @@
 			}
 		},
 		{
-			"name": "js/ts json",
+			"name": "JSON: Comma dictionary",
 			"scope": "punctuation.separator.dictionary.pair.json",
+			"settings": {
+				"foreground": "#f38d2d"
+			}
+		},
+		{
+			"name": "JSON: Comma array",
+			"scope": "punctuation.separator.array.json",
 			"settings": {
 				"foreground": "#f38d2d"
 			}
