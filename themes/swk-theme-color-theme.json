@@ -155,6 +155,15 @@
 				"foreground": "#9AA83A"
 			}
 		},
+		{
+			"name": "ENV: key",
+			"scope": [
+				"variable.other.env"
+			],
+			"settings": {
+				"foreground": "#f7bf76"
+			}
+		},
 		// {
 		// 	"name": "HTML Tag Value",
 		// 	"scope": "meta.tag string -source -punctuation, text source text meta.tag string -punctuation",
@@ -459,6 +468,15 @@
 			],
 			"settings": {
 				"foreground": "#ffae00"
+			}
+		},
+		{
+			"name": "C++: using keyword",
+			"scope": [
+				"keyword.other.using.directive.cpp"
+			],
+			"settings": {
+				"foreground": "#f15050"
 			}
 		},
 		/** --------------------------------------------------------------------------------
@@ -799,6 +817,25 @@
 			],
 			"settings": {
 				"foreground": "#D0D0D0"
+			}
+		},
+		{
+			"name": "C++: Decimal Number",
+			"scope": [
+				"constant.numeric.decimal.cpp",
+				"constant.numeric.decimal.c"
+			],
+			"settings": {
+				"foreground": "#75beb8"
+			}
+		},
+		{
+			"name": "ENV: number",
+			"scope": [
+				"constant.numeric.env"
+			],
+			"settings": {
+				"foreground": "#ffffff"
 			}
 		},
 		{
@@ -1555,7 +1592,7 @@
 			}
 		},
 		{
-			"name": "C, C++ Other punctuation",
+			"name": "C++: Other punctuation",
 			"scope": "punctuation.separator.c,punctuation.separator.cpp",
 			"settings": {
 				"foreground": "#D0D0D0"
@@ -1643,7 +1680,7 @@
 		},
 		{
 			"name": "js console function",
-			"scope": "entity.name.function,support.function.console",
+			"scope": "support.function.console",
 			"settings": {
 				"foreground": "#80cbc4"
 			}
@@ -1720,6 +1757,15 @@
 			],
 			"settings": {
 				"foreground": "#F8F8F2"
+			}
+		},
+		{
+			"name": "C++: include",
+			"scope": [
+				"string.quoted.other.lt-gt.include"
+			],
+			"settings": {
+				"foreground": "#00b7ff"
 			}
 		},
 		// {
@@ -2199,13 +2245,6 @@
 		// {
 		// 	"name": "deleted.diff",
 		// 	"scope": "markup.deleted.diff",
-		// 	"settings": {
-		// 		"foreground": "#e06c75"
-		// 	}
-		// },
-		// {
-		// 	"name": "c++ function",
-		// 	"scope": "meta.function.c,meta.function.cpp",
 		// 	"settings": {
 		// 		"foreground": "#e06c75"
 		// 	}
