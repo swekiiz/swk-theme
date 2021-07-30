@@ -3327,12 +3327,12 @@
 		"tab.activeBorder": "#080808",
 		"tab.activeBorderTop": "#fffb00",
 		// "tab.activeForeground": "#dcdcdc", // !
-		"tab.border": "#080808",
-		"tab.hoverBackground": "#080808",
-		"tab.inactiveBackground": "#212121",
+		"tab.border": "#000000",
+		"tab.hoverBackground": "#000000",
+		"tab.inactiveBackground": "#202020",
 		"tab.inactiveForeground": "#B2B2B1",
-		"tab.unfocusedActiveBorder": "#080808",
-		"tab.unfocusedActiveBorderTop": "#080808",
+		"tab.unfocusedActiveBorder": "#000000",
+		"tab.unfocusedActiveBorderTop": "#000000",
 		"tab.unfocusedActiveForeground": "#D0D0D0",
 		// "tab.unfocusedHoverBackground": "#323842", // !
 		"tab.unfocusedInactiveForeground": "#8C8C8A",
