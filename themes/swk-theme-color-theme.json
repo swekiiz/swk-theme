@@ -483,6 +483,15 @@
 			}
 		},
 		{
+			"name": "solidity: (` => `)",
+			"scope": [
+				"source.solidity keyword.operator.mapping"
+			],
+			"settings": {
+				"foreground": "#ffff00"
+			}
+		},
+		{
 			"name": "Operator (`SELECT`, `FROM`, `GROUP BY`, etc.)",
 			"scope": [
 				"keyword.other.sql",
@@ -500,6 +509,13 @@
 			],
 			"settings": {
 				"foreground": "#df8080"
+			}
+		},
+		{
+			"name": "solidity: function keyword",
+			"scope": "source.solidity storage.type.function",
+			"settings": {
+				"foreground": "#9575cd"
 			}
 		},
 		{
@@ -610,6 +626,51 @@
 			],
 			"settings": {
 				"foreground": "#91c088"
+			}
+		},
+		{
+			"name": "solidity: constructor keyword",
+			"scope": [
+				"source.solidity storage.type.constructor",
+			],
+			"settings": {
+				"foreground": "#d463df"
+			}
+		},
+		{
+			"name": "solidity: pragma version",
+			"scope": [
+				"source.solidity constant.other.pragma",
+			],
+			"settings": {
+				"foreground": "#f5b400"
+			}
+		},
+		{
+			"name": "solidity: pragma keyword",
+			"scope": [
+				"source.solidity keyword.control.pragma",
+			],
+			"settings": {
+				"foreground": "#9e9886"
+			}
+		},
+		{
+			"name": "solidity: assembly keyword",
+			"scope": [
+				"source.solidity keyword.control.assembly",
+			],
+			"settings": {
+				"foreground": "#5eff5e"
+			}
+		},
+		{
+			"name": "solidity: returns keyword",
+			"scope": [
+				"source.solidity keyword.control.flow.return",
+			],
+			"settings": {
+				"foreground": "#ffd45e"
 			}
 		},
 		/** --------------------------------------------------------------------------------
@@ -867,6 +928,41 @@
 			}
 		},
 		{
+			"name": "solidity: builtin types",
+			"scope": "source.solidity support.type.primitive",
+			"settings": {
+				"foreground": "#c08ca5"
+			}
+		},
+		{
+			"name": "solidity: access types",
+			"scope": "source.solidity storage.type.modifier.access",
+			"settings": {
+				"foreground": "#7d99f1"
+			}
+		},
+		{
+			"name": "solidity: modify types",
+			"scope": "source.solidity storage.type.modifier.readonly",
+			"settings": {
+				"foreground": "#73d3d6"
+			}
+		},
+		{
+			"name": "solidity: indexed types",
+			"scope": "source.solidity storage.type.modifier.indexed",
+			"settings": {
+				"foreground": "#bce1e2"
+			}
+		},
+		{
+			"name": "solidity: mapping types",
+			"scope": "source.solidity storage.type.mapping",
+			"settings": {
+				"foreground": "#c26558"
+			}
+		},
+		{
 			"name": "php types",
 			"scope": "storage.type.php,meta.other.type.phpdoc.php,keyword.other.type.php,keyword.other.array.phpdoc.php",
 			"settings": {
@@ -921,6 +1017,15 @@
 			],
 			"settings": {
 				"foreground": "#e974df"
+			}
+		},
+		{
+			"name": "solidity: Storage Modifier (` is `)",
+			"scope": [
+				"source.solidity storage.modifier"
+			],
+			"settings": {
+				"foreground": "#95ddff"
 			}
 		},
 		// {
@@ -1618,6 +1723,13 @@
 			}
 		},
 		{
+			"name": "solidity: scope punctuation {} ",
+			"scope": "source.solidity punctuation.brace.curly",
+			"settings": {
+				"foreground": "#ffff11"
+			}
+		},
+		{
 			"name": "Embedded",
 			"scope": "variable.interpolation",
 			"settings": {
@@ -1988,6 +2100,15 @@
 			],
 			"settings": {
 				"foreground": "#d68d5b"
+			}
+		},
+		{
+			"name": "solidity: Function/Method Name Invoked (`myFunc()`)",
+			"scope": [
+				"source.solidity entity.name.function"
+			],
+			"settings": {
+				"foreground": "#e2d73f"
 			}
 		},
 		{
