@@ -13,7 +13,7 @@
 		},
 		"property": {
 			"foreground": "#d5f34f"
-		}
+		},
 		// "enumMember": {
 		// 	"foreground": "#56b6c2"
 		// },
@@ -23,18 +23,18 @@
 		// "variable.defaultLibrary": {
 		// 	"foreground": "#e5c07b"
 		// },
-		// "variable:dart": {
-		// 	"foreground": "#d19a66"
-		// },
-		// "property:dart": {
-		// 	"foreground": "#d19a66"
-		// },
-		// "annotation:dart": {
-		// 	"foreground": "#d19a66"
-		// },
-		// "parameter.label:dart": {
-		// 	"foreground": "#abb2bf"
-		// }
+		"variable:dart": {
+			"foreground": "#d19a66"
+		},
+		"property:dart": {
+			"foreground": "#d19a66"
+		},
+		"annotation:dart": {
+			"foreground": "#d19a66"
+		},
+		"parameter.label:dart": {
+			"foreground": "#abb2bf"
+		}
 	},
 	"tokenColors": [
 		/** --------------------------------------------------------------------------------
@@ -2298,28 +2298,28 @@
 			"name": "JSON string depth 1",
 			"scope": "source.json meta.structure.dictionary.json meta.structure.dictionary.json string.quoted.double.json",
 			"settings": {
-				"foreground": "#69f0ae"
+				"foreground": "#66eeaf"
 			}
 		},
 		{
 			"name": "JSON string depth 2",
 			"scope": "source.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json string.quoted.double.json",
 			"settings": {
-				"foreground": "#69f0ae"
+				"foreground": "#63ecb0"
 			}
 		},
 		{
 			"name": "JSON string depth 3",
 			"scope": "source.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json string.quoted.double.json",
 			"settings": {
-				"foreground": "#69f0ae"
+				"foreground": "#60eab1"
 			}
 		},
 		{
 			"name": "JSON string depth 4",
 			"scope": "source.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json string.quoted.double.json",
 			"settings": {
-				"foreground": "#69f0ae"
+				"foreground": "#5de8b2"
 			}
 		},
 		/** --------------------------------------------------------------------------------
@@ -2365,7 +2365,7 @@
 			"name": "php illegal.non-null-typehinted",
 			"scope": "invalid.illegal.non-null-typehinted.php",
 			"settings": {
-				"foreground": "#FF0B00"
+				"foreground": "#ad0900"
 			}
 		},
 		/** --------------------------------------------------------------------------------
@@ -3144,10 +3144,10 @@
 		// },
 	],
 	"colors": {
-		"activityBar.background": "#080808",
+		"activityBar.background": "#000000",
 		"activityBar.foreground": "#f5f5f5",
 		"activityBarBadge.background": "#F3C900",
-		"activityBarBadge.foreground": "#080808",
+		"activityBarBadge.foreground": "#000000",
 		// "badge.background": "#21252b", // !
 		"breadcrumb.activeSelectionForeground": "#D0D0D0",
 		"breadcrumb.focusForeground": "#8C8C8A",
@@ -3168,7 +3168,7 @@
 		// "dropdown.background": "#21252b", // !
 		"dropdown.border": "#50504F",
 		// "dropdown.listBackground": "#21252b", // !
-		"editor.background": "#080808",
+		"editor.background": "#000000",
 		"editor.findMatchBackground": "#43a047",
 		// "editor.findMatchBorder": "#457dff", // !
 		"editor.findMatchHighlightBackground": "#880e4f",
@@ -3219,7 +3219,7 @@
 		// "editorGroup.border": "#23252c", // !
 		"editorGroup.dropBackground": "#00000040",
 		// "editorGroup.emptyBackground": "#282c34", // !
-		"editorGroupHeader.tabsBackground": "#080808",
+		"editorGroupHeader.tabsBackground": "#000000",
 		"editorHoverWidget.background": "#333332",
 		"editorHoverWidget.border": "#333332",
 		"editorIndentGuide.activeBackground": "#50504F",
@@ -3243,7 +3243,7 @@
 		"extensionButton.prominentBackground": "#00A4F3",
 		"extensionButton.prominentForeground": "#FFFFFF",
 		"extensionButton.prominentHoverBackground": "#0093DA",
-		"focusBorder": "#080808",
+		"focusBorder": "#000000",
 		"gitDecoration.conflictingResourceForeground": "#FF41C1",
 		"gitDecoration.deletedResourceForeground": "#F3002B",
 		"gitDecoration.ignoredResourceForeground": "#8C8C8A",
@@ -3296,7 +3296,7 @@
 		"notifications.background": "#292928",
 		"notifications.border": "#3D3D3C",
 		"notifications.foreground": "#F8F8F2",
-		"panel.background": "#080808",
+		"panel.background": "#000000",
 		"panel.border": "#3D3D3C",
 		// "panelInput.border": "#23252c", // !
 		// "panelSection.dropBackground": "#323842a8", // !
@@ -3332,19 +3332,19 @@
 		"sideBarSectionHeader.background": "#212121",
 		"sideBarSectionHeader.foreground": "#B2B2B1",
 		// "sideBarTitle.foreground": "#abb2bf", // !
-		"statusBar.background": "#080808",
+		"statusBar.background": "#000000",
 		"statusBar.debuggingBackground": "#F34F00",
 		// "statusBar.debuggingBorder": "#171c22", // !
 		"statusBar.debuggingForeground": "#F8F8F2",
 		"statusBar.foreground": "#878787",
-		"statusBar.noFolderBackground": "#080808",
+		"statusBar.noFolderBackground": "#000000",
 		"statusBar.noFolderForeground": "#878787",
 		"statusBarItem.activeBackground": "#000000",
 		"statusBarItem.hoverBackground": "#0B0B0B",
 		// "statusBarItem.remoteBackground": "#282c34", // !
 		// "statusBarItem.remoteForeground": "#f8fafd", // !
 		"tab.activeBackground": "#000000",
-		"tab.activeBorder": "#080808",
+		"tab.activeBorder": "#000000",
 		"tab.activeBorderTop": "#fffb00",
 		// "tab.activeForeground": "#dcdcdc", // !
 		"tab.border": "#000000",
@@ -3372,7 +3372,7 @@
 		// "terminal.ansiRed": "#e05561", // !
 		// "terminal.ansiWhite": "#e6e6e6", // !
 		// "terminal.ansiYellow": "#d18f52", // !
-		"terminal.background": "#080808",
+		"terminal.background": "#000000",
 		// "terminal.border": "#abb2bf", // !
 		// "terminal.foreground": "#abb2bf", // !
 		// "terminal.selectionBackground": "#abb2bf30", // !
@@ -3381,9 +3381,9 @@
 		// "textLink.activeForeground": "#f0f0f0", // !
 		// "textLink.foreground": "#f0f0f0", // !
 		// "textPreformat.foreground": "#d19a66", // !
-		"titleBar.activeBackground": "#080808",
+		"titleBar.activeBackground": "#000000",
 		"titleBar.activeForeground": "#878787",
-		"titleBar.inactiveBackground": "#080808",
+		"titleBar.inactiveBackground": "#000000",
 		"titleBar.inactiveForeground": "#878787",
 		// "tree.indentGuidesStroke": "#343a45", // !
 		// "widget.shadow": "#23252c", // !
