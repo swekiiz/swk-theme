@@ -30,17 +30,24 @@
 		 *  --------------------------------------------------------------------------------
 		 */
 		{
-			"name": "Comments",
+			"name": "dart: source",
 			"scope": "source.dart",
 			"settings": {
 				"foreground": "#e7e7e7"
 			}
 		},
 		{
-			"name": "java source",
+			"name": "java: source",
 			"scope": "source.java",
 			"settings": {
 				"foreground": "#e7e7e7"
+			}
+		},
+		{
+			"name": "haskell: source",
+			"scope": "source.haskell",
+			"settings": {
+				"foreground": "#d6c0c0"
 			}
 		},
 		/** --------------------------------------------------------------------------------
@@ -143,12 +150,66 @@
 			}
 		},
 		{
+			"name": "go: string double quoted",
+			"scope": [
+				"string.quoted.double.go"
+			],
+			"settings": {
+				"foreground": "#69f0ae"
+			}
+		},
+		{
+			"name": "php: string double quoted",
+			"scope": [
+				"source.php string.quoted.double.php"
+			],
+			"settings": {
+				"foreground": "#69f0ae"
+			}
+		},
+		{
+			"name": "haskell: string double quoted",
+			"scope": [
+				"string.quoted.double.haskell"
+			],
+			"settings": {
+				"foreground": "#87ca1c"
+			}
+		},
+		{
+			"name": "elixir: string double quoted",
+			"scope": [
+				"string.quoted.double.elixir"
+			],
+			"settings": {
+				"foreground": "#e7bc2e"
+			}
+		},
+		{
+			"name": "kotlin: string double quoted",
+			"scope": [
+				"string.quoted.double.kotlin"
+			],
+			"settings": {
+				"foreground": "#7bbd45"
+			}
+		},
+		{
 			"name": "java: string double quoted",
 			"scope": [
 				"string.quoted.double.java"
 			],
 			"settings": {
 				"foreground": "#69f0ae"
+			}
+		},
+		{
+			"name": "crystal: string double quoted",
+			"scope": [
+				"string.quoted.double.interpolated.crystal"
+			],
+			"settings": {
+				"foreground": "#3ba795"
 			}
 		},
 		{
@@ -168,6 +229,24 @@
 			],
 			"settings": {
 				"foreground": "#e0ae24"
+			}
+		},
+		{
+			"name": "c#: string double quoted",
+			"scope": [
+				"string.quoted.double.cs",
+			],
+			"settings": {
+				"foreground": "#a0b144"
+			}
+		},
+		{
+			"name": "python: string triple quoted",
+			"scope": [
+				"string.quoted.docstring.multi.python"
+			],
+			"settings": {
+				"foreground": "#94c456"
 			}
 		},
 		{
@@ -250,7 +329,7 @@
 			"name": "php: Single Quote HMTL Fix",
 			"scope": "punctuation.definition.string.end.php, punctuation.definition.string.begin.php",
 			"settings": {
-				"foreground": "#9AA83A"
+				"foreground": "#d0b340"
 			}
 		},
 		{
@@ -283,6 +362,27 @@
 		// 		"foreground": "#8080FF"
 		// 	}
 		// },
+		{
+			"name": "elixir: back slash in string",
+			"scope": "source.elixir constant.character.escape.elixir",
+			"settings": {
+				"foreground": "#bb79f1"
+			}
+		},
+		{
+			"name": "elixir: back slash in string",
+			"scope": "source.cs constant.character.escape.cs",
+			"settings": {
+				"foreground": "#d765fa"
+			}
+		},
+		{
+			"name": "haskell: backtick of infix operator",
+			"scope": "source.haskell keyword.operator.function.infix.haskell punctuation.backtick.haskell",
+			"settings": {
+				"foreground": "#FF5E5E"
+			}
+		},
 		/** --------------------------------------------------------------------------------
 		 *  * Regular Expressions
 		 *  --------------------------------------------------------------------------------
@@ -335,6 +435,13 @@
 			}
 		},
 		{
+			"name": "haskell: Keywords",
+			"scope": "source.haskell keyword",
+			"settings": {
+				"foreground": "#62d1cc"
+			}
+		},
+		{
 			"name": "Operators",
 			"scope": "keyword.operator",
 			"settings": {
@@ -363,15 +470,6 @@
 			}
 		},
 		{
-			"name": "dart: operator.accessor ( . )",
-			"scope": [
-				"punctuation.dot.dart"
-			],
-			"settings": {
-				"foreground": "#ff379b"
-			}
-		},
-		{
 			"name": "js: operator.arithmetic ( +, -, *, / )",
 			"scope": [
 				"keyword.operator.arithmetic"
@@ -381,12 +479,48 @@
 			}
 		},
 		{
+			"name": "dart: operator.accessor ( . )",
+			"scope": [
+				"punctuation.dot.dart"
+			],
+			"settings": {
+				"foreground": "#ff379b"
+			}
+		},
+		{
+			"name": "go: operator.accessor ( . )",
+			"scope": [
+				"source.go punctuation.other.period.go"
+			],
+			"settings": {
+				"foreground": "#e7147e"
+			}
+		},
+		{
 			"name": "js: operator.accessor ( . )",
 			"scope": [
 				"keyword.operator.accessor"
 			],
 			"settings": {
 				"foreground": "#ff379b"
+			}
+		},
+		{
+			"name": "elixir: operator.accessor ( . )",
+			"scope": [
+				"punctuation.separator.method.elixir"
+			],
+			"settings": {
+				"foreground": "#ff379b"
+			}
+		},
+		{
+			"name": "crystal: operator.accessor ( . )",
+			"scope": [
+				"punctuation.separator.method.crystal"
+			],
+			"settings": {
+				"foreground": "#ff3748"
 			}
 		},
 		{
@@ -414,6 +548,15 @@
 			],
 			"settings": {
 				"foreground": "#a0ff88"
+			}
+		},
+		{
+			"name": "crystal: comma ( , )",
+			"scope": [
+				"source.crystal punctuation.separator.object.crystal"
+			],
+			"settings": {
+				"foreground": "#ff7777"
 			}
 		},
 		{
@@ -504,6 +647,13 @@
 			}
 		},
 		{
+			"name": "python: colon",
+			"scope": "punctuation.separator.colon.python",
+			"settings": {
+				"foreground": "#ff5ef2"
+			}
+		},
+		{
 			"name": "python: (`.`) operator",
 			"scope": [
 				"punctuation.separator.period.python"
@@ -548,6 +698,41 @@
 			}
 		},
 		{
+			"name": "haskell: Control Flow (`if`, `else`, `switch`, `return`, etc.)",
+			"scope": "source.haskell keyword.control",
+			"settings": {
+				"foreground": "#f058dc"
+			}
+		},
+		{
+			"name": "kotlin: Control Flow (`if`, `else`, `switch`, `return`, etc.)",
+			"scope": "keyword.control.conditional.kotlin",
+			"settings": {
+				"foreground": "#d49457"
+			}
+		},
+		{
+			"name": "c#: Control Flow (`if`, `else`, `switch`, `return`, etc.)",
+			"scope": "source.cs keyword.control.conditional",
+			"settings": {
+				"foreground": "#f09a38"
+			}
+		},
+		{
+			"name": "crystal: Control Flow (`if`, `else`, `switch`, `return`, etc.)",
+			"scope": "source.crystal keyword.control",
+			"settings": {
+				"foreground": "#d64fb4"
+			}
+		},
+		{
+			"name": "elixir: Control Flow (`if`, `else`, `switch`, `return`, etc.)",
+			"scope": "keyword.control.elixir",
+			"settings": {
+				"foreground": "#9fdb7d"
+			}
+		},
+		{
 			"name": "Control Flow (`if`, `else`)",
 			"scope": "keyword.control.conditional,keyword.control.import",
 			"settings": {
@@ -575,6 +760,15 @@
 			],
 			"settings": {
 				"foreground": "#FF5E5E"
+			}
+		},
+		{
+			"name": "c#: New Operator (`$obj = new My_Class`)",
+			"scope": [
+				"keyword.other.new.cs"
+			],
+			"settings": {
+				"foreground": "#e49bf7"
 			}
 		},
 		{
@@ -621,7 +815,7 @@
 			}
 		},
 		{
-			"name": "js template literals begin",
+			"name": "js: template literals begin",
 			"scope": [
 				"keyword.other.template.begin"
 			],
@@ -630,7 +824,7 @@
 			}
 		},
 		{
-			"name": "js template literals end",
+			"name": "js: template literals end",
 			"scope": [
 				"keyword.other.template.end"
 			],
@@ -639,7 +833,7 @@
 			}
 		},
 		{
-			"name": "js template literals variable braces begin",
+			"name": "js: template literals variable braces begin",
 			"scope": [
 				"keyword.other.substitution.begin"
 			],
@@ -648,7 +842,7 @@
 			}
 		},
 		{
-			"name": "js template literals variable braces end",
+			"name": "js: template literals variable braces end",
 			"scope": [
 				"keyword.other.substitution.end"
 			],
@@ -675,7 +869,14 @@
 			}
 		},
 		{
-			"name": "C++: ( # )",
+			"name": "c#: namespace keyword",
+			"scope": "keyword.other.namespace.cs",
+			"settings": {
+				"foreground": "#eebb4e"
+			}
+		},
+		{
+			"name": "c++: ( # )",
 			"scope": [
 				"punctuation.definition.directive.cpp",
 				"punctuation.definition.directive.c"
@@ -685,7 +886,7 @@
 			}
 		},
 		{
-			"name": "C++: operator",
+			"name": "c++: operator",
 			"scope": [
 				"source.cpp keyword.operator",
 				"source.c keyword.operator"
@@ -695,7 +896,7 @@
 			}
 		},
 		{
-			"name": "C++: using keyword",
+			"name": "c++: using keyword",
 			"scope": [
 				"keyword.other.using.directive.cpp"
 			],
@@ -704,7 +905,7 @@
 			}
 		},
 		{
-			"name": "C++: struct keyword",
+			"name": "c++: struct keyword",
 			"scope": [
 				"storage.type.struct.cpp",
 				"storage.type.struct.c"
@@ -714,13 +915,22 @@
 			}
 		},
 		{
-			"name": "C++: return keyword",
+			"name": "c++: return keyword",
 			"scope": [
 				"keyword.control.return.cpp",
 				"keyword.control.return.c"
 			],
 			"settings": {
 				"foreground": "#91c088"
+			}
+		},
+		{
+			"name": "c++: output keyword",
+			"scope": [
+				"support.function.construct.output.php"
+			],
+			"settings": {
+				"foreground": "#afce86"
 			}
 		},
 		{
@@ -789,6 +999,15 @@
 			}
 		},
 		{
+			"name": "c#: Property of Object of Variable",
+			"scope": [
+				"variable.other.object.property.cs"
+			],
+			"settings": {
+				"foreground": "#97aecc"
+			}
+		},
+		{
 			"name": "Normal Variable",
 			"scope": "variable.other.normal",
 			"settings": {
@@ -829,14 +1048,14 @@
 			}
 		},
 		{
-			"name": "JS Language Variable",
+			"name": "js: Language Variable",
 			"scope": "variable.language.js",
 			"settings": {
 				"foreground": "#CC555A"
 			}
 		},
 		{
-			"name": "React: variable in jsx",
+			"name": "react: variable in jsx",
 			"scope": [
 				"meta.embedded",
 				"source.groovy.embedded"
@@ -853,7 +1072,7 @@
 			}
 		},
 		{
-			"name": "Ruby Variable",
+			"name": "ruby: variable",
 			"scope": "variable.language.ruby",
 			"settings": {
 				"fontStyle": "",
@@ -861,10 +1080,26 @@
 			}
 		},
 		{
+			"name": "crystal: variable",
+			"scope": [
+				"variable.other.crystal"
+			],
+			"settings": {
+				"foreground": "#bfacdf"
+			}
+		},
+		{
 			"name": "vue: variable in tag",
 			"scope": "source.vue text.html.vue-html variable.other.readwrite",
 			"settings": {
 				"foreground": "#cbe652"
+			}
+		},
+		{
+			"name": "elixir: variable in tag",
+			"scope": "source.elixir variable.other.constant",
+			"settings": {
+				"foreground": "#7ad8c4"
 			}
 		},
 		// {
@@ -1027,13 +1262,31 @@
 			}
 		},
 		{
-			"name": "C++: Storage Type",
+			"name": "c++: Storage Type",
 			"scope": [
 				"source.cpp storage.type",
 				"source.c storage.type"
 			],
 			"settings": {
 				"foreground": "#df7a1c"
+			}
+		},
+		{
+			"name": "c#: Storage Type (`int`, `float`, etc.)",
+			"scope": [
+				"source.cs keyword.type.cs"
+			],
+			"settings": {
+				"foreground": "#d89d2f"
+			}
+		},
+		{
+			"name": "haskell: Storage Type",
+			"scope": [
+				"storage.type.haskell"
+			],
+			"settings": {
+				"foreground": "#8365f3"
 			}
 		},
 		{
@@ -1104,13 +1357,13 @@
 		// 		"foreground": "#d19a66"
 		// 	}
 		// },
-		// {
-		// 	"name": "cs storage type",
-		// 	"scope": "storage.type.cs",
-		// 	"settings": {
-		// 		"foreground": "#e5c07b"
-		// 	}
-		// },
+		{
+			"name": "c#: storage type",
+			"scope": "storage.type.cs",
+			"settings": {
+				"foreground": "#eed45e"
+			}
+		},
 		{
 			"name": "Storage Modifier (`public`, `private`, `static`, etc.)",
 			"scope": [
@@ -1146,6 +1399,15 @@
 			],
 			"settings": {
 				"foreground": "#eeee22"
+			}
+		},
+		{
+			"name": "go: string after package",
+			"scope": [
+				"entity.name.package.go"
+			],
+			"settings": {
+				"foreground": "#d14809"
 			}
 		},
 		{
@@ -1252,12 +1514,37 @@
 			}
 		},
 		{
-			"name": "ENV: number",
+			"name": "crystal: Number",
+			"scope": "constant.numeric.integer.decimal.crystal",
+			"settings": {
+				"foreground": "#5bdbe4"
+			}
+		},
+		{
+			"name": "env: number",
 			"scope": [
 				"constant.numeric.env"
 			],
 			"settings": {
 				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "php: number",
+			"scope": [
+				"constant.numeric.decimal.php"
+			],
+			"settings": {
+				"foreground": "#95d2ee"
+			}
+		},
+		{
+			"name": "elixir: number",
+			"scope": [
+				"constant.numeric.elixir"
+			],
+			"settings": {
+				"foreground": "#22aed1"
 			}
 		},
 		{
@@ -1299,6 +1586,20 @@
 				"foreground": "#8080FF"
 			}
 		},
+		{
+			"name": "haskell: Symbol",
+			"scope": "constant.other.haskell",
+			"settings": {
+				"foreground": "#e9e176"
+			}
+		},
+		{
+			"name": "haskell: infix operator",
+			"scope": "source.haskell keyword.operator.function.infix.haskell",
+			"settings": {
+				"foreground": "#27b8e4"
+			}
+		},
 		// {
 		// 	"name": "Constant other symbol",
 		// 	"scope": "constant.other.symbol",
@@ -1307,10 +1608,16 @@
 		// 	}
 		// },
 		{
-			"name": "Ruby Symbol",
+			"name": "crystal: Symbol",
+			"scope": "constant.other.symbol.crystal",
+			"settings": {
+				"foreground": "#9AA83A"
+			}
+		},
+		{
+			"name": "ruby: Symbol",
 			"scope": "constant.other.symbol.ruby",
 			"settings": {
-				"fontStyle": "",
 				"foreground": "#9AA83A"
 			}
 		},
@@ -2088,7 +2395,7 @@
 				"punctuation.section.embedded.end.php"
 			],
 			"settings": {
-				"foreground": "#D08442"
+				"foreground": "#e6a975"
 			}
 		},
 		{
@@ -2194,12 +2501,30 @@
 			}
 		},
 		{
+			"name": "haskell: functions",
+			"scope": [
+				"entity.name.function.haskell",
+			],
+			"settings": {
+				"foreground": "#cebd25"
+			}
+		},
+		{
 			"name": "Function/Method Parameter (`function getFullName($fname, $lname`)",
 			"scope": [
 				"meta.function.parameter"
 			],
 			"settings": {
 				"foreground": "#D0D0D0"
+			}
+		},
+		{
+			"name": "php: Function/Method Parameter (`function getFullName($fname, $lname`)",
+			"scope": [
+				"meta.function.parameter.no-default.php variable.other.php"
+			],
+			"settings": {
+				"foreground": "#e05399"
 			}
 		},
 		{
@@ -2252,7 +2577,7 @@
 			"name": "php call-function",
 			"scope": "meta.function-call.php,meta.function-call.object.php,meta.function-call.static.php",
 			"settings": {
-				"foreground": "#D0B344"
+				"foreground": "#dfceaa"
 			}
 		},
 		{
@@ -2336,6 +2661,13 @@
 			"scope": "entity.name.namespace",
 			"settings": {
 				"foreground": "#ee894e"
+			}
+		},
+		{
+			"name": "haskell: namespaces",
+			"scope": "entity.name.namespace.haskell",
+			"settings": {
+				"foreground": "#91aa99"
 			}
 		},
 		// {
@@ -3437,15 +3769,6 @@
 		// 	"scope": "punctuation.definition.block.sequence.item.yaml",
 		// 	"settings": {
 		// 		"foreground": "#abb2bf"
-		// 	}
-		// },
-		// {
-		// 	"scope": [
-		// 		"constant.language.symbol.elixir",
-		// 		"constant.language.symbol.double-quoted.elixir"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#56b6c2"
 		// 	}
 		// },
 		// {
