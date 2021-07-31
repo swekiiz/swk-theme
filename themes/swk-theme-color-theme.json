@@ -84,6 +84,13 @@
 		 *  --------------------------------------------------------------------------------
 		 */
 		{
+			"name": "Default meta block",
+			"scope": "meta",
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
 			"name": "String single quoted",
 			"scope": "string.quoted.single",
 			"settings": {
