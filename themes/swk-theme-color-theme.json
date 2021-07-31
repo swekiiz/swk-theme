@@ -23,20 +23,19 @@
 		// "variable.defaultLibrary": {
 		// 	"foreground": "#e5c07b"
 		// },
-		"variable:dart": {
-			"foreground": "#d19a66"
-		},
-		"property:dart": {
-			"foreground": "#d19a66"
-		},
-		"annotation:dart": {
-			"foreground": "#d19a66"
-		},
-		"parameter.label:dart": {
-			"foreground": "#abb2bf"
-		}
 	},
 	"tokenColors": [
+		/** --------------------------------------------------------------------------------
+		 *  * Source
+		 *  --------------------------------------------------------------------------------
+		 */
+		{
+			"name": "Comments",
+			"scope": "source.dart",
+			"settings": {
+				"foreground": "#e7e7e7"
+			}
+		},
 		/** --------------------------------------------------------------------------------
 		 *  * Comments
 		 *  --------------------------------------------------------------------------------
@@ -128,6 +127,24 @@
 			}
 		},
 		{
+			"name": "dart: string double quoted",
+			"scope": [
+				"source.dart string.interpolated.double.dart"
+			],
+			"settings": {
+				"foreground": "#69f0ae"
+			}
+		},
+		{
+			"name": "dart: import string",
+			"scope": [
+				"string.interpolated.single.dart"
+			],
+			"settings": {
+				"foreground": "#69f0ae"
+			}
+		},
+		{
 			"name": "c++: string double quoted",
 			"scope": [
 				"string.quoted.double.cpp",
@@ -185,7 +202,7 @@
 			}
 		},
 		{
-			"name": "JS Template String (``my template string``)",
+			"name": "js: Template String (``my template string``)",
 			"scope": [
 				"string.quoted.template.js",
 				"punctuation.definition.string.template",
@@ -195,7 +212,7 @@
 			}
 		},
 		{
-			"name": "React typescript import string",
+			"name": "react: typescript import string",
 			"scope": [
 				"meta.import.tsx string.quoted.single.tsx",
 				"meta.import.tsx string.quoted.double.tsx"
@@ -214,14 +231,14 @@
 			}
 		},
 		{
-			"name": "PHP Single Quote HMTL Fix",
+			"name": "php: Single Quote HMTL Fix",
 			"scope": "punctuation.definition.string.end.php, punctuation.definition.string.begin.php",
 			"settings": {
 				"foreground": "#9AA83A"
 			}
 		},
 		{
-			"name": "ENV: key",
+			"name": "env: key",
 			"scope": [
 				"variable.other.env"
 			],
@@ -295,6 +312,13 @@
 			}
 		},
 		{
+			"name": "dart: Keywords",
+			"scope": "keyword.declaration.dart",
+			"settings": {
+				"foreground": "#bb7c29"
+			}
+		},
+		{
 			"name": "Operators",
 			"scope": "keyword.operator",
 			"settings": {
@@ -311,7 +335,7 @@
 			}
 		},
 		{
-			"name": "React (jsx, tsx) default keyword",
+			"name": "react: (jsx, tsx) default keyword",
 			"scope": [
 				"keyword.control.default.js",
 				"keyword.control.default.jsx",
@@ -323,7 +347,16 @@
 			}
 		},
 		{
-			"name": "js operator.arithmetic ( +, -, *, / )",
+			"name": "dart: operator.accessor ( . )",
+			"scope": [
+				"punctuation.dot.dart"
+			],
+			"settings": {
+				"foreground": "#ff379b"
+			}
+		},
+		{
+			"name": "js: operator.arithmetic ( +, -, *, / )",
 			"scope": [
 				"keyword.operator.arithmetic"
 			],
@@ -332,7 +365,7 @@
 			}
 		},
 		{
-			"name": "js operator.accessor ( . )",
+			"name": "js: operator.accessor ( . )",
 			"scope": [
 				"keyword.operator.accessor"
 			],
@@ -341,7 +374,7 @@
 			}
 		},
 		{
-			"name": "js operator.assignment ( = )",
+			"name": "js: operator.assignment ( = )",
 			"scope": [
 				"keyword.operator.assignment"
 			],
@@ -350,7 +383,7 @@
 			}
 		},
 		{
-			"name": "js comma ( , )",
+			"name": "js: comma ( , )",
 			"scope": [
 				"meta.delimiter.comma.js"
 			],
@@ -359,7 +392,16 @@
 			}
 		},
 		{
-			"name": "js/ts import keyword",
+			"name": "dart: comma ( , )",
+			"scope": [
+				"source.dart punctuation.comma.dart"
+			],
+			"settings": {
+				"foreground": "#a0ff88"
+			}
+		},
+		{
+			"name": "js, ts: import keyword",
 			"scope": [
 				"keyword.operator.expression.import",
 			],
@@ -436,6 +478,16 @@
 			}
 		},
 		{
+			"name": "dart: semicolon (`;`)",
+			"scope": [
+				"source.dart meta.declaration.dart punctuation.terminator.dart",
+				"source.dart punctuation.terminator.dart"
+			],
+			"settings": {
+				"foreground": "#ffdddd"
+			}
+		},
+		{
 			"name": "python: (`.`) operator",
 			"scope": [
 				"punctuation.separator.period.python"
@@ -473,10 +525,17 @@
 			}
 		},
 		{
+			"name": "dart: Control Flow (`if`, `else`, `switch`, `return`, etc.)",
+			"scope": "keyword.control.dart",
+			"settings": {
+				"foreground": "#ffd14a"
+			}
+		},
+		{
 			"name": "Control Flow (`if`, `else`)",
 			"scope": "keyword.control.conditional,keyword.control.import",
 			"settings": {
-				"foreground": "#FFD14A"
+				"foreground": "#ffd14a"
 			}
 		},
 		{
@@ -924,6 +983,13 @@
 		// 		"foreground": "#c678dd"
 		// 	}
 		// },
+		{
+			"name": "dart: declaration after as",
+			"scope": "source.dart meta.declaration.dart",
+			"settings": {
+				"foreground": "#daa22a"
+			}
+		},
 		/** --------------------------------------------------------------------------------
 		 *  * Storage Type & Type(ts)
 		 *  --------------------------------------------------------------------------------
@@ -1037,13 +1103,22 @@
 			}
 		},
 		{
-			"name": "React: Storage Modifier (`public`, `private`, `static`, etc.)",
+			"name": "react: Storage Modifier (`public`, `private`, `static`, etc.)",
 			"scope": [
 				"storage.modifier.jsx",
 				"storage.modifier.tsx"
 			],
 			"settings": {
 				"foreground": "#e974df"
+			}
+		},
+		{
+			"name": "dart: Storage Modifier (`public`, `private`, `static`, etc.)",
+			"scope": [
+				"storage.modifier.dart"
+			],
+			"settings": {
+				"foreground": "#ffff00"
 			}
 		},
 		{
@@ -1114,13 +1189,20 @@
 			}
 		},
 		{
-			"name": "C++: Decimal Number",
+			"name": "c++: Decimal Number",
 			"scope": [
 				"constant.numeric.decimal.cpp",
 				"constant.numeric.decimal.c"
 			],
 			"settings": {
 				"foreground": "#75beb8"
+			}
+		},
+		{
+			"name": "dart: Number",
+			"scope": "constant.numeric.dart",
+			"settings": {
+				"foreground": "#f0ff65"
 			}
 		},
 		{
@@ -2194,6 +2276,13 @@
 			"scope": "entity.name.class.identifier.namespace.type",
 			"settings": {
 				"foreground": "#FF5E5E"
+			}
+		},
+		{
+			"name": "dart: Classes",
+			"scope": "support.class.dart",
+			"settings": {
+				"foreground": "#a787c2"
 			}
 		},
 		{
