@@ -673,6 +673,16 @@
 			}
 		},
 		{
+			"name": "React: variable in jsx",
+			"scope": [
+				"meta.embedded",
+				"source.groovy.embedded"
+			],
+			"settings": {
+				"foreground": "#C5C8C6"
+			}
+		},
+		{
 			"name": "variable.language.rust",
 			"scope": "variable.language.rust",
 			"settings": {
@@ -894,6 +904,16 @@
 			],
 			"settings": {
 				"foreground": "#69f0ae"
+			}
+		},
+		{
+			"name": "React: Storage Modifier (`public`, `private`, `static`, etc.)",
+			"scope": [
+				"storage.modifier.jsx",
+				"storage.modifier.tsx"
+			],
+			"settings": {
+				"foreground": "#e974df"
 			}
 		},
 		// {
