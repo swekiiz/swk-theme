@@ -36,6 +36,13 @@
 				"foreground": "#e7e7e7"
 			}
 		},
+		{
+			"name": "java source",
+			"scope": "source.java",
+			"settings": {
+				"foreground": "#e7e7e7"
+			}
+		},
 		/** --------------------------------------------------------------------------------
 		 *  * Comments
 		 *  --------------------------------------------------------------------------------
@@ -130,6 +137,15 @@
 			"name": "dart: string double quoted",
 			"scope": [
 				"source.dart string.interpolated.double.dart"
+			],
+			"settings": {
+				"foreground": "#69f0ae"
+			}
+		},
+		{
+			"name": "java: string double quoted",
+			"scope": [
+				"string.quoted.double.java"
 			],
 			"settings": {
 				"foreground": "#69f0ae"
@@ -1062,23 +1078,25 @@
 				"foreground": "#fffb2a"
 			}
 		},
-		// {
-		// 	"name": "java type",
-		// 	"scope": [
-		// 		"storage.type.annotation.java",
-		// 		"storage.type.object.array.java"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#e5c07b"
-		// 	}
-		// },
-		// {
-		// 	"name": "Java Storage",
-		// 	"scope": "token.storage.type.java",
-		// 	"settings": {
-		// 		"foreground": "#e5c07b"
-		// 	}
-		// },
+		{
+			"name": "Java: types",
+			"scope": [
+				"storage.type.java",
+				"storage.type.generic.java"
+			],
+			"settings": {
+				"foreground": "#7bbee5"
+			}
+		},
+		{
+			"name": "java: @ annotation",
+			"scope": [
+				"storage.type.annotation.java",
+			],
+			"settings": {
+				"foreground": "#fc4ad5"
+			}
+		},
 		// {
 		// 	"name": "haskell storage type",
 		// 	"scope": "storage.type.haskell",
@@ -1122,6 +1140,34 @@
 			}
 		},
 		{
+			"name": "java: Storage Modifier (`public`, `private`, `static`, etc.)",
+			"scope": [
+				"source.java storage.modifier"
+			],
+			"settings": {
+				"foreground": "#eeee22"
+			}
+		},
+		{
+			"name": "java: string after package",
+			"scope": [
+				"storage.modifier.package.java"
+			],
+			"settings": {
+				"foreground": "#34f1ff"
+			}
+		},
+		{
+			"name": "java: return type",
+			"scope": [
+				"meta.method.return-type.java storage.type.primitive.java",
+				"meta.method.return-type.java storage.type.java"
+			],
+			"settings": {
+				"foreground": "#dbbd84"
+			}
+		},
+		{
 			"name": "solidity: Storage Modifier (` is `)",
 			"scope": [
 				"source.solidity storage.modifier"
@@ -1146,13 +1192,13 @@
 		// 		"foreground": "#e5c07b"
 		// 	}
 		// },
-		// {
-		// 	"name": "java modifier.import",
-		// 	"scope": "storage.modifier.import.java,storage.type.java,storage.type.generic.java",
-		// 	"settings": {
-		// 		"foreground": "#e5c07b"
-		// 	}
-		// },
+		{
+			"name": "java: import string",
+			"scope": "storage.modifier.import.java",
+			"settings": {
+				"foreground": "#e5c07b"
+			}
+		},
 		{
 			"name": "Storage",
 			"scope": "storage.other",
@@ -2316,12 +2362,21 @@
 			}
 		},
 		{
-			"name": "entity.other.inherited-class",
+			"name": "inherited-class",
 			"scope": [
 				"entity.other.inherited-class"
 			],
 			"settings": {
 				"foreground": "#6089B4"
+			}
+		},
+		{
+			"name": "java: inherited-class",
+			"scope": [
+				"entity.other.inherited-class.java"
+			],
+			"settings": {
+				"foreground": "#66b691"
 			}
 		},
 		{
@@ -2732,20 +2787,6 @@
 		// 	"scope": "support.constant.property.math",
 		// 	"settings": {
 		// 		"foreground": "#d19a66"
-		// 	}
-		// },
-		// {
-		// 	"name": "java source",
-		// 	"scope": "source.java",
-		// 	"settings": {
-		// 		"foreground": "#e06c75"
-		// 	}
-		// },
-		// {
-		// 	"name": "java modifier.import",
-		// 	"scope": "punctuation.section.block.begin.java,punctuation.section.block.end.java,punctuation.definition.method-parameters.begin.java,punctuation.definition.method-parameters.end.java,meta.method.identifier.java,punctuation.section.method.begin.java,punctuation.section.method.end.java,punctuation.terminator.java,punctuation.section.class.begin.java,punctuation.section.class.end.java,punctuation.section.inner-class.begin.java,punctuation.section.inner-class.end.java,meta.method-call.java,punctuation.section.class.begin.bracket.curly.java,punctuation.section.class.end.bracket.curly.java,punctuation.section.method.begin.bracket.curly.java,punctuation.section.method.end.bracket.curly.java,punctuation.separator.period.java,punctuation.bracket.angle.java,punctuation.definition.annotation.java,meta.method.body.java",
-		// 	"settings": {
-		// 		"foreground": "#abb2bf"
 		// 	}
 		// },
 		// {
