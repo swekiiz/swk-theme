@@ -105,21 +105,30 @@
 			}
 		},
 		{
-			"name": "JS: string double quoted",
+			"name": "js: import string",
+			"scope": [
+				"source.js string.quoted.module.js"
+			],
+			"settings": {
+				"foreground": "#69f0ae"
+			}
+		},
+		{
+			"name": "js: string double quoted",
 			"scope": "string.quoted.double.js",
 			"settings": {
 				"foreground": "#69f0ae"
 			}
 		},
 		{
-			"name": "TS: string double quoted",
+			"name": "ts: string double quoted",
 			"scope": "string.quoted.double.ts",
 			"settings": {
 				"foreground": "#69f0ae"
 			}
 		},
 		{
-			"name": "C++: string double quoted",
+			"name": "c++: string double quoted",
 			"scope": [
 				"string.quoted.double.cpp",
 				"string.quoted.double.c"
@@ -154,6 +163,15 @@
 			"scope": "string.quoted.double.html, punctuation.definition.string.begin.html, punctuation.definition.string.end.html",
 			"settings": {
 				"foreground": "#e09be2"
+			}
+		},
+		{
+			"name": "vue: import string",
+			"scope": [
+				"source.vue source.js string.quoted.module.js"
+			],
+			"settings": {
+				"foreground": "#69f0ae"
 			}
 		},
 		{
@@ -342,7 +360,9 @@
 		},
 		{
 			"name": "js/ts import keyword",
-			"scope": "keyword.operator.expression.import",
+			"scope": [
+				"keyword.operator.expression.import",
+			],
 			"settings": {
 				"foreground": "#FFD14A"
 			}
@@ -681,7 +701,7 @@
 			"name": "Property of Variable",
 			"scope": "variable.other.property",
 			"settings": {
-				"foreground": "#8d6e63"
+				"foreground": "#a88477"
 			}
 		},
 		{
@@ -763,6 +783,13 @@
 			"settings": {
 				"fontStyle": "",
 				"foreground": "#D0B344"
+			}
+		},
+		{
+			"name": "vue: variable in tag",
+			"scope": "source.vue text.html.vue-html variable.other.readwrite",
+			"settings": {
+				"foreground": "#cbe652"
 			}
 		},
 		// {
@@ -1682,7 +1709,6 @@
 			"name": "Tag Other",
 			"scope": "meta.tag.other, entity.name.tag.style, entity.name.tag.script, meta.tag.block.script, source.js.embedded punctuation.definition.tag.html, source.css.embedded punctuation.definition.tag.html",
 			"settings": {
-				"fontStyle": "",
 				"foreground": "#cecece"
 			}
 		},
@@ -1829,6 +1855,16 @@
 			],
 			"settings": {
 				"foreground": "#D77676"
+			}
+		},
+		{
+			"name": "vue: punctuation generic",
+			"scope": [
+				"source.vue punctuation.definition.generic.begin.html",
+				"source.vue punctuation.definition.generic.end.html"
+			],
+			"settings": {
+				"foreground": "#d49c00"
 			}
 		},
 		{
@@ -2320,6 +2356,34 @@
 			"scope": "entity.other.attribute-name.id",
 			"settings": {
 				"foreground": "#a27272"
+			}
+		},
+		{
+			"name": "vue: HTML ID",
+			"scope": "source.vue meta.toc-list.id",
+			"settings": {
+				"foreground": "#eeb518"
+			}
+		},
+		{
+			"name": "vue: template tag",
+			"scope": "source.vue entity.name.tag.template.html",
+			"settings": {
+				"foreground": "#69a0d4"
+			}
+		},
+		{
+			"name": "vue: script tag",
+			"scope": "source.vue entity.name.tag.script.html",
+			"settings": {
+				"foreground": "#d2d469"
+			}
+		},
+		{
+			"name": "vue: style tag",
+			"scope": "source.vue entity.name.tag.style.html",
+			"settings": {
+				"foreground": "#d469bd"
 			}
 		},
 		/** --------------------------------------------------------------------------------
