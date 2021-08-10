@@ -410,7 +410,7 @@
 			"name": "haskell: backtick of infix operator",
 			"scope": "source.haskell keyword.operator.function.infix.haskell punctuation.backtick.haskell",
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		/** --------------------------------------------------------------------------------
@@ -443,7 +443,7 @@
 				"string.regexp keyword.other"
 			],
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		/** --------------------------------------------------------------------------------
@@ -475,7 +475,7 @@
 			"name": "Operators",
 			"scope": "keyword.operator",
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
@@ -484,7 +484,7 @@
 				"keyword.operator.module"
 			],
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
@@ -505,7 +505,7 @@
 				"keyword.operator.arithmetic"
 			],
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
@@ -559,7 +559,7 @@
 				"keyword.operator.assignment"
 			],
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
@@ -602,14 +602,14 @@
 			"name": "operator logical (&&, ||)",
 			"scope": "keyword.operator.logical",
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
 			"name": "operator bitwise (<<, >>, &, |, ^)",
 			"scope": "keyword.operator.bitwise",
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
@@ -623,21 +623,21 @@
 			"name": "spread operator ( ... )",
 			"scope": "keyword.operator.spread",
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
 			"name": "operator channel",
 			"scope": "keyword.operator.channel",
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
 			"name": "TS type operator",
 			"scope": "keyword.operator.type",
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
@@ -722,7 +722,7 @@
 				"keyword.operator.expression.keyof"
 			],
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
@@ -810,7 +810,7 @@
 				"keyword.other.new"
 			],
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
@@ -839,7 +839,7 @@
 				"keyword.other.alias.sql"
 			],
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
@@ -1071,7 +1071,7 @@
 				"variable.other.object.property"
 			],
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
@@ -1200,14 +1200,14 @@
 			"name": "Parameter of function",
 			"scope": "variable.parameter",
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
 			"name": "F#: Parameter of function",
 			"scope": "source.fsharp.fsl variable.parameter",
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
@@ -1216,7 +1216,7 @@
 				"variable.parameter.js"
 			],
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
@@ -1225,7 +1225,7 @@
 				"meta.function.json.arrow.js meta.function.parameters.js"
 			],
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
@@ -1295,7 +1295,7 @@
 				"variable.other.class.ts"
 			],
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		// {
@@ -1309,7 +1309,7 @@
 		// 	"name": "python parameter",
 		// 	"scope": "variable.parameter.function.language.python",
 		// 	"settings": {
-		// 		"foreground": "#FF5E5E"
+		// 		"foreground": "#ff5e5e"
 		// 	}
 		// },
 		// {
@@ -1753,7 +1753,7 @@
 			"name": "CSS/SCSS/LESS Operators",
 			"scope": "keyword.operator.css,keyword.operator.scss,keyword.operator.less",
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
@@ -2066,7 +2066,7 @@
 				"markup beginning.punctuation"
 			],
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
@@ -2765,7 +2765,7 @@
 			"name": "Classes",
 			"scope": "entity.name.type.namespace",
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
@@ -2793,7 +2793,7 @@
 			"name": "Class name",
 			"scope": "entity.name.class.identifier.namespace.type",
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
@@ -2862,7 +2862,7 @@
 			"name": "Type Name",
 			"scope": "entity.name.type",
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
@@ -2931,7 +2931,7 @@
 			"name": "Tags",
 			"scope": "entity.name.tag",
 			"settings": {
-				"foreground": "#FF5E5E"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
@@ -3300,35 +3300,35 @@
 		// 	"name": "keyword.operator.misc.rust",
 		// 	"scope": "keyword.operator.misc.rust",
 		// 	"settings": {
-		// 		"foreground": "#FF5E5E"
+		// 		"foreground": "#ff5e5e"
 		// 	}
 		// },
 		// {
 		// 	"name": "keyword.operator.sigil.rust",
 		// 	"scope": "keyword.operator.sigil.rust",
 		// 	"settings": {
-		// 		"foreground": "#FF5E5E"
+		// 		"foreground": "#ff5e5e"
 		// 	}
 		// },
 		// {
 		// 	"name": "operator",
 		// 	"scope": "keyword.operator.delete",
 		// 	"settings": {
-		// 		"foreground": "#FF5E5E"
+		// 		"foreground": "#ff5e5e"
 		// 	}
 		// },
 		// {
 		// 	"name": "keyword.operator",
 		// 	"scope": "keyword.operator.arithmetic,keyword.operator.comparison,keyword.operator.decrement,keyword.operator.increment,keyword.operator.relational",
 		// 	"settings": {
-		// 		"foreground": "#FF5E5E"
+		// 		"foreground": "#ff5e5e"
 		// 	}
 		// },
 		// {
 		// 	"name": "C operator assignment",
 		// 	"scope": "keyword.operator.assignment.c,keyword.operator.comparison.c,keyword.operator.c,keyword.operator.increment.c,keyword.operator.decrement.c,keyword.operator.bitwise.shift.c,keyword.operator.assignment.cpp,keyword.operator.comparison.cpp,keyword.operator.cpp,keyword.operator.increment.cpp,keyword.operator.decrement.cpp,keyword.operator.bitwise.shift.cpp",
 		// 	"settings": {
-		// 		"foreground": "#FF5E5E"
+		// 		"foreground": "#ff5e5e"
 		// 	}
 		// },
 		// {
@@ -3342,7 +3342,7 @@
 		// 	"name": "keyword.operator.sizeof.c",
 		// 	"scope": "keyword.operator.sizeof.c,keyword.operator.sizeof.cpp",
 		// 	"settings": {
-		// 		"foreground": "#FF5E5E"
+		// 		"foreground": "#ff5e5e"
 		// 	}
 		// },
 		// {
@@ -3356,14 +3356,14 @@
 		// 	"name": "python logical",
 		// 	"scope": "keyword.operator.logical.python",
 		// 	"settings": {
-		// 		"foreground": "#FF5E5E"
+		// 		"foreground": "#ff5e5e"
 		// 	}
 		// },
 		// {
 		// 	"name": "pyCs",
 		// 	"scope": "variable.parameter.function.python",
 		// 	"settings": {
-		// 		"foreground": "#FF5E5E"
+		// 		"foreground": "#ff5e5e"
 		// 	}
 		// },
 		// {
@@ -3384,14 +3384,14 @@
 		// 	"name": "Compound Assignment Operators",
 		// 	"scope": "keyword.operator.assignment.compound",
 		// 	"settings": {
-		// 		"foreground": "#FF5E5E"
+		// 		"foreground": "#ff5e5e"
 		// 	}
 		// },
 		// {
 		// 	"name": "Compound Assignment Operators js/ts",
 		// 	"scope": "keyword.operator.assignment.compound.js,keyword.operator.assignment.compound.ts",
 		// 	"settings": {
-		// 		"foreground": "#FF5E5E"
+		// 		"foreground": "#ff5e5e"
 		// 	}
 		// },
 		// {
