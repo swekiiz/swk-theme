@@ -92,6 +92,20 @@
 				"foreground": "#61abff",
 			}
 		},
+		{
+			"name": "c#: triple slash tag",
+			"scope": "source.cs comment.block.documentation.cs entity.name.tag",
+			"settings": {
+				"foreground": "#758ab8",
+			}
+		},
+		{
+			"name": "c#: triple slash tag punctuation",
+			"scope": "source.cs comment.block.documentation.cs meta.tag.cs",
+			"settings": {
+				"foreground": "#fff7d4",
+			}
+		},
 		// {
 		// 	"name": "Comment Markup Link",
 		// 	"scope": "comment markup.link",
@@ -253,7 +267,7 @@
 				"string.quoted.double.cs",
 			],
 			"settings": {
-				"foreground": "#a0b144"
+				"foreground": "#b7ca4d"
 			}
 		},
 		{
@@ -643,13 +657,20 @@
 			}
 		},
 		{
-			"name": "ts, tsx: semicolon (`;`)",
+			"name": "ts,tsx: semicolon (`;`)",
 			"scope": [
 				"punctuation.terminator.statement.ts",
 				"punctuation.terminator.statement.tsx"
 			],
 			"settings": {
 				"foreground": "#ffdddd"
+			}
+		},
+		{
+			"name": "c#: semicolon (`;`)",
+			"scope": "punctuation.terminator.statement.cs",
+			"settings": {
+				"foreground": "#f1dc9f"
 			}
 		},
 		{
@@ -663,10 +684,17 @@
 			}
 		},
 		{
-			"name": "python: colon",
+			"name": "python: colon (`:`)",
 			"scope": "punctuation.separator.colon.python",
 			"settings": {
 				"foreground": "#ff5ef2"
+			}
+		},
+		{
+			"name": "c#: colon (`:`)",
+			"scope": "punctuation.separator.colon.cs",
+			"settings": {
+				"foreground": "#f00088"
 			}
 		},
 		{
@@ -676,6 +704,13 @@
 			],
 			"settings": {
 				"foreground": "#ff00bf"
+			}
+		},
+		{
+			"name": "c#: hash (`#`)",
+			"scope": "source.cs meta.preprocessor.cs punctuation.separator.hash.cs",
+			"settings": {
+				"foreground": "#fff177"
 			}
 		},
 		{
@@ -892,6 +927,13 @@
 			}
 		},
 		{
+			"name": "c#: `this` keyword",
+			"scope": "keyword.other.this.cs",
+			"settings": {
+				"foreground": "#ff7b00"
+			}
+		},
+		{
 			"name": "c++: ( # )",
 			"scope": [
 				"punctuation.definition.directive.cpp",
@@ -921,6 +963,15 @@
 			}
 		},
 		{
+			"name": "c#: using keyword",
+			"scope": [
+				"keyword.other.using.cs"
+			],
+			"settings": {
+				"foreground": "#f15050"
+			}
+		},
+		{
 			"name": "c++: struct keyword",
 			"scope": [
 				"storage.type.struct.cpp",
@@ -938,6 +989,15 @@
 			],
 			"settings": {
 				"foreground": "#91c088"
+			}
+		},
+		{
+			"name": "c#: return keyword",
+			"scope": [
+				"keyword.control.flow.return.cs"
+			],
+			"settings": {
+				"foreground": "#fce941"
 			}
 		},
 		{
@@ -1143,7 +1203,6 @@
 				"foreground": "#FF5E5E"
 			}
 		},
-
 		{
 			"name": "F#: Parameter of function",
 			"scope": "source.fsharp.fsl variable.parameter",
@@ -1416,6 +1475,15 @@
 			}
 		},
 		{
+			"name": "c#: Storage Modifier (`public`, `private`, `static`, etc.)",
+			"scope": [
+				"storage.modifier.cs"
+			],
+			"settings": {
+				"foreground": "#9dbeaa"
+			}
+		},
+		{
 			"name": "react: Storage Modifier (`public`, `private`, `static`, etc.)",
 			"scope": [
 				"storage.modifier.jsx",
@@ -1519,10 +1587,17 @@
 			}
 		},
 		{
-			"name": "TS template type <type>",
+			"name": "TS punctuation type <type>",
 			"scope": "punctuation.definition.typeparameters.begin,punctuation.definition.typeparameters.end",
 			"settings": {
 				"foreground": "#6777bd"
+			}
+		},
+		{
+			"name": "c#: punctuation type <type>",
+			"scope": "punctuation.definition.typeparameters.begin,punctuation.definition.typeparameters.end",
+			"settings": {
+				"foreground": "#ff5e5e"
 			}
 		},
 		/** --------------------------------------------------------------------------------
@@ -2559,6 +2634,15 @@
 			}
 		},
 		{
+			"name": "c#: functions",
+			"scope": [
+				"entity.name.function.cs",
+			],
+			"settings": {
+				"foreground": "#9ffcf2"
+			}
+		},
+		{
 			"name": "Function/Method Parameter (`function getFullName($fname, $lname`)",
 			"scope": [
 				"meta.function.parameter"
@@ -2685,10 +2769,24 @@
 			}
 		},
 		{
+			"name": "c#: namespace",
+			"scope": "entity.name.type.namespace.cs",
+			"settings": {
+				"foreground": "#53c7aa"
+			}
+		},
+		{
 			"name": "Classes ex. JSX tags",
 			"scope": "support.class, entity.name.type.class",
 			"settings": {
 				"foreground": "#B8FCB1"
+			}
+		},
+		{
+			"name": "c#: class",
+			"scope": "source.cs entity.name.type.class.cs",
+			"settings": {
+				"foreground": "#e477e7"
 			}
 		},
 		{
