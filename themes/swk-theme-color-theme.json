@@ -262,6 +262,16 @@
 			}
 		},
 		{
+			"name": "c++: string double quoted include",
+			"scope": [
+				"string.quoted.double.include.cpp",
+				"string.quoted.double.include.c"
+			],
+			"settings": {
+				"foreground": "#dfc16f"
+			}
+		},
+		{
 			"name": "c#: string double quoted",
 			"scope": [
 				"string.quoted.double.cs",
@@ -273,10 +283,23 @@
 		{
 			"name": "python: string triple quoted",
 			"scope": [
-				"string.quoted.docstring.multi.python"
+				"string.quoted.docstring.multi.python",
+				"string.quoted.docstring.raw.multi.python"
 			],
 			"settings": {
 				"foreground": "#94c456"
+			}
+		},
+		{
+			"name": "python: string triple quoted punctuation",
+			"scope": [
+				"string.quoted.docstring.raw.multi.python punctuation.definition.string.begin.python",
+				"string.quoted.docstring.raw.multi.python punctuation.definition.string.end.python",
+				"string.quoted.docstring.multi.python punctuation.definition.string.begin.python",
+				"string.quoted.docstring.multi.python punctuation.definition.string.end.python"
+			],
+			"settings": {
+				"foreground": "#6872fc"
 			}
 		},
 		{
@@ -648,6 +671,20 @@
 			}
 		},
 		{
+			"name": "c++: pointer (`*`)",
+			"scope": "storage.modifier.pointer.cpp",
+			"settings": {
+				"foreground": "#ff5e5e"
+			}
+		},
+		{
+			"name": "c++: namespace access (`::`)",
+			"scope": "punctuation.separator.namespace.access.cpp",
+			"settings": {
+				"foreground": "#ffef5e"
+			}
+		},
+		{
 			"name": "Accessor Operator (`.`)",
 			"scope": [
 				"punctuation.accessor"
@@ -688,6 +725,13 @@
 			"scope": "punctuation.separator.colon.python",
 			"settings": {
 				"foreground": "#ff5ef2"
+			}
+		},
+		{
+			"name": "python: colon slice (`[ : ]`)",
+			"scope": "punctuation.separator.slice.python",
+			"settings": {
+				"foreground": "#79e4a2"
 			}
 		},
 		{
@@ -997,7 +1041,7 @@
 				"keyword.control.flow.return.cs"
 			],
 			"settings": {
-				"foreground": "#fce941"
+				"foreground": "#7c85d4"
 			}
 		},
 		{
@@ -1237,6 +1281,13 @@
 			],
 			"settings": {
 				"foreground": "#d68d5b"
+			}
+		},
+		{
+			"name": "python: argument",
+			"scope": "meta.function-call.arguments.python",
+			"settings": {
+				"foreground": "#d0cad1"
 			}
 		},
 		{
@@ -2118,10 +2169,17 @@
 		// 	}
 		// },
 		{
-			"name": "Markdown heading setext",
+			"name": "Markdown: heading setext",
 			"scope": "markup.heading.setext.markdown",
 			"settings": {
 				"foreground": "#D0B344"
+			}
+		},
+		{
+			"name": "Markdown: paragraph",
+			"scope": "meta.paragraph.markdown",
+			"settings": {
+				"foreground": "#c0c0c0"
 			}
 		},
 		{
@@ -2149,7 +2207,7 @@
 			"name": "Markdown Underline Link/Image",
 			"scope": "markup.underline.link.markdown,markup.underline.link.image.markdown",
 			"settings": {
-				"foreground": "#e28cfc"
+				"foreground": "#dfafee"
 			}
 		},
 		{
@@ -2376,6 +2434,16 @@
 			"scope": "punctuation.separator.delimiter",
 			"settings": {
 				"foreground": "#D0D0D0"
+			}
+		},
+		{
+			"name": "c++: comma (`,`)",
+			"scope": [
+				"punctuation.separator.delimiter.comma.cpp",
+				"punctuation.separator.delimiter.comma.c"
+			],
+			"settings": {
+				"foreground": "#ffd95e"
 			}
 		},
 		{
@@ -2707,10 +2775,20 @@
 			}
 		},
 		{
-			"name": "php call-function",
+			"name": "php: call-function",
 			"scope": "meta.function-call.php,meta.function-call.object.php,meta.function-call.static.php",
 			"settings": {
-				"foreground": "#dfceaa"
+				"foreground": "#ddc99e"
+			}
+		},
+		{
+			"name": "python: call-function",
+			"scope": [
+				"meta.function-call.python",
+				"meta.function-call.generic.python"
+			],
+			"settings": {
+				"foreground": "#ddc99e"
 			}
 		},
 		{
@@ -3029,6 +3107,15 @@
 			],
 			"settings": {
 				"foreground": "#D0D0D0"
+			}
+		},
+		{
+			"name": "markdown: Link & Image Title",
+			"scope": [
+				"meta.link.inline.markdown string.other.link"
+			],
+			"settings": {
+				"foreground": "#84dac1"
 			}
 		},
 		{
