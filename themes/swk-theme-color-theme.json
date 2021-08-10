@@ -44,6 +44,13 @@
 			}
 		},
 		{
+			"name": "F#: source",
+			"scope": "source.fsharp.fsl",
+			"settings": {
+				"foreground": "#e9e0c5"
+			}
+		},
+		{
 			"name": "haskell: source",
 			"scope": "source.haskell",
 			"settings": {
@@ -165,6 +172,15 @@
 			],
 			"settings": {
 				"foreground": "#69f0ae"
+			}
+		},
+		{
+			"name": "F#: string double quoted",
+			"scope": [
+				"string.quoted.double.fsharp"
+			],
+			"settings": {
+				"foreground": "#87ca1c"
 			}
 		},
 		{
@@ -1008,6 +1024,15 @@
 			}
 		},
 		{
+			"name": "c#: Variable",
+			"scope": [
+				"variable.fsharp"
+			],
+			"settings": {
+				"foreground": "#fffecb"
+			}
+		},
+		{
 			"name": "Normal Variable",
 			"scope": "variable.other.normal",
 			"settings": {
@@ -1114,6 +1139,14 @@
 		{
 			"name": "Parameter of function",
 			"scope": "variable.parameter",
+			"settings": {
+				"foreground": "#FF5E5E"
+			}
+		},
+
+		{
+			"name": "F#: Parameter of function",
+			"scope": "source.fsharp.fsl variable.parameter",
 			"settings": {
 				"foreground": "#FF5E5E"
 			}
@@ -1536,6 +1569,13 @@
 			],
 			"settings": {
 				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "F#: Number",
+			"scope": "source.fsharp.fsl constant.numeric",
+			"settings": {
+				"foreground": "#5bbde4"
 			}
 		},
 		{
@@ -2916,84 +2956,91 @@
 		 *  --------------------------------------------------------------------------------
 		 */
 		{
-			"name": "JSON Property Name",
+			"name": "json: Property Name",
 			"scope": "support.type.property-name.json",
 			"settings": {
 				"foreground": "#eeeeee"
 			}
 		},
 		{
-			"name": "JSON `quotes` for property name",
+			"name": "json: `quotes` for property name",
 			"scope": "support.type.property-name.json punctuation",
 			"settings": {
 				"foreground": "#8f8c92"
 			}
 		},
 		{
-			"name": "js/ts json",
+			"name": "json: js/ts json",
 			"scope": "punctuation.definition.string.begin.json,punctuation.definition.string.end.json",
 			"settings": {
 				"foreground": "#8f8c92"
 			}
 		},
 		{
-			"name": "JSON: Comma dictionary",
+			"name": "json: Comma dictionary",
 			"scope": "punctuation.separator.dictionary.pair.json",
 			"settings": {
 				"foreground": "#f38d2d"
 			}
 		},
 		{
-			"name": "JSON: Comma array",
+			"name": "json: Comma array",
 			"scope": "punctuation.separator.array.json",
 			"settings": {
 				"foreground": "#f38d2d"
 			}
 		},
 		{
-			"name": "JSON number",
+			"name": "json: colon :",
+			"scope": "punctuation.separator.dictionary.key-value.json",
+			"settings": {
+				"foreground": "#eb8bb8"
+			}
+		},
+		{
+			"name": "json: number",
 			"scope": "constant.numeric.json",
 			"settings": {
 				"foreground": "#78beca"
 			}
 		},
 		{
-			"name": "JSON true",
+			"name": "json: constant",
 			"scope": "constant.language.json",
 			"settings": {
 				"foreground": "#d40000"
 			}
 		},
 		{
-			"name": "JSON string depth 0",
+			"name": "json: string depth 0",
 			"scope": "source.json meta.structure.dictionary.json string.quoted.double.json",
 			"settings": {
 				"foreground": "#69f0ae"
 			}
 		},
 		{
-			"name": "JSON string depth 1",
+			"name": "json: string depth 1",
 			"scope": "source.json meta.structure.dictionary.json meta.structure.dictionary.json string.quoted.double.json",
 			"settings": {
 				"foreground": "#66eeaf"
 			}
 		},
 		{
-			"name": "JSON string depth 2",
+			"name": "json: string depth 2",
 			"scope": "source.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json string.quoted.double.json",
 			"settings": {
 				"foreground": "#63ecb0"
 			}
 		},
 		{
-			"name": "JSON string depth 3",
+			"name": "json: string depth 3",
 			"scope": "source.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json string.quoted.double.json",
 			"settings": {
 				"foreground": "#60eab1"
 			}
 		},
 		{
-			"name": "JSON string depth 4",
+			"name": "json: string depth 4",
 			"scope": "source.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json string.quoted.double.json",
 			"settings": {
 				"foreground": "#5de8b2"
