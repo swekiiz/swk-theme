@@ -51,6 +51,16 @@
 			}
 		},
 		{
+			"name": "swift: source",
+			"scope": [
+				"source.swift",
+				"source.swift meta"
+			],
+			"settings": {
+				"foreground": "#f8dddc"
+			}
+		},
+		{
 			"name": "groovy: source",
 			"scope": [
 				"source.groovy",
@@ -74,6 +84,16 @@
 			"scope": "source.haskell",
 			"settings": {
 				"foreground": "#d6c0c0"
+			}
+		},
+		{
+			"name": "shell: source",
+			"scope": [
+				"source.shell",
+				"source.shell meta"
+			],
+			"settings": {
+				"foreground": "#c5e9d8"
 			}
 		},
 		/** --------------------------------------------------------------------------------
@@ -153,6 +173,13 @@
 		{
 			"name": "groovy: string single quoted",
 			"scope": "string.quoted.single.groovy",
+			"settings": {
+				"foreground": "#abcdef"
+			}
+		},
+		{
+			"name": "ruby: string single quoted",
+			"scope": "string.quoted.single.ruby",
 			"settings": {
 				"foreground": "#abcdef"
 			}
@@ -287,6 +314,13 @@
 			}
 		},
 		{
+			"name": "shell: string double quoted",
+			"scope": "string.quoted.double.shell",
+			"settings": {
+				"foreground": "#d4c9a7"
+			}
+		},
+		{
 			"name": "dart: import string",
 			"scope": [
 				"string.interpolated.single.dart"
@@ -411,6 +445,16 @@
 			}
 		},
 		{
+			"name": "shell: String ` ` ",
+			"scope": [
+				"punctuation.definition.string.begin.shell",
+				"punctuation.definition.string.end.shell",
+			],
+			"settings": {
+				"foreground": "#d49100"
+			}
+		},
+		{
 			"name": "Template String (``my template string``)",
 			"scope": [
 				"string.template",
@@ -438,6 +482,20 @@
 			],
 			"settings": {
 				"foreground": "#69f0ae"
+			}
+		},
+		{
+			"name": "java: import string",
+			"scope": "storage.modifier.import.java",
+			"settings": {
+				"foreground": "#e5c07b"
+			}
+		},
+		{
+			"name": "swift: import string",
+			"scope": "meta.import.swift entity.name.type.swift",
+			"settings": {
+				"foreground": "#b2e3ee"
 			}
 		},
 		{
@@ -669,6 +727,15 @@
 			}
 		},
 		{
+			"name": "ruby: operator.accessor ( . )",
+			"scope": [
+				"punctuation.separator.method.ruby"
+			],
+			"settings": {
+				"foreground": "#e7147e"
+			}
+		},
+		{
 			"name": "python: operator.accessor ( . )",
 			"scope": [
 				"punctuation.separator.period.python"
@@ -750,6 +817,15 @@
 			}
 		},
 		{
+			"name": "swift: import keywords",
+			"scope": [
+				"keyword.control.import.swift"
+			],
+			"settings": {
+				"foreground": "#ff5e5e"
+			}
+		},
+		{
 			"name": "operator logical (&&, ||)",
 			"scope": "keyword.operator.logical",
 			"settings": {
@@ -813,6 +889,13 @@
 			}
 		},
 		{
+			"name": "ruby: namespace access (`::`)",
+			"scope": "punctuation.separator.namespace.ruby",
+			"settings": {
+				"foreground": "#ffef5e"
+			}
+		},
+		{
 			"name": "ts,tsx: semicolon (`;`)",
 			"scope": [
 				"punctuation.terminator.statement.ts",
@@ -837,6 +920,22 @@
 			],
 			"settings": {
 				"foreground": "#ffdddd"
+			}
+		},
+		{
+			"name": "shell: double semicolon (`;;`)",
+			"scope": "punctuation.terminator.case-clause.shell",
+			"settings": {
+				"foreground": "#ff8888"
+			}
+		},
+		{
+			"name": "swift: colon (`:`)",
+			"scope": [
+				"punctuation.separator.key-value.swift"
+			],
+			"settings": {
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
@@ -912,6 +1011,13 @@
 		{
 			"name": "groovy: Control Flow (`if`, `else`, `switch`, `return`, etc.)",
 			"scope": "keyword.control.groovy",
+			"settings": {
+				"foreground": "#ffd14a"
+			}
+		},
+		{
+			"name": "swift: Control Flow (`if`, `else`, `switch`, `return`, etc.)",
+			"scope": "source.swift keyword.control",
 			"settings": {
 				"foreground": "#ffd14a"
 			}
@@ -1043,6 +1149,13 @@
 			}
 		},
 		{
+			"name": "swift: function keyword",
+			"scope": "source.swift storage.type.function.swift",
+			"settings": {
+				"foreground": "#00aeff"
+			}
+		},
+		{
 			"name": "Methods",
 			"scope": "keyword.other.special-method",
 			"settings": {
@@ -1092,6 +1205,15 @@
 			],
 			"settings": {
 				"foreground": "#e991ec"
+			}
+		},
+		{
+			"name": "swift: class keyword",
+			"scope": [
+				"storage.type.class.swift"
+			],
+			"settings": {
+				"foreground": "#ffae00"
 			}
 		},
 		{
@@ -1284,10 +1406,36 @@
 			}
 		},
 		{
+			"name": "shell: punctuation of variable",
+			"scope": [
+				"punctuation.definition.variable.shell",
+			],
+			"settings": {
+				"foreground": "#5fa08f"
+			}
+		},
+		{
+			"name": "shell: Variable",
+			"scope": [
+				"variable.other.normal.shell",
+			],
+			"settings": {
+				"foreground": "#6696ca"
+			}
+		},
+		{
+			"name": "shell: special variable",
+			"scope": [
+				"variable.other.special.shell",
+			],
+			"settings": {
+				"foreground": "#6696ca"
+			}
+		},
+		{
 			"name": "Normal Variable",
 			"scope": "variable.other.normal",
 			"settings": {
-				"fontStyle": "",
 				"foreground": "#6089B4"
 			}
 		},
@@ -1399,6 +1547,13 @@
 			"scope": "source.fsharp.fsl variable.parameter",
 			"settings": {
 				"foreground": "#ff5e5e"
+			}
+		},
+		{
+			"name": "swift: Parameter of function",
+			"scope": "variable.parameter.function.swift",
+			"settings": {
+				"foreground": "#da6ffa"
 			}
 		},
 		{
@@ -1742,6 +1897,24 @@
 			}
 		},
 		{
+			"name": "swift: Storage Modifier (`public`, `private`, `static`, etc.)",
+			"scope": [
+				"source.swift storage.modifier"
+			],
+			"settings": {
+				"foreground": "#a5824d"
+			}
+		},
+		{
+			"name": "swift: Storage Modifier after @",
+			"scope": [
+				"storage.modifier.attribute.swift"
+			],
+			"settings": {
+				"foreground": "#3582b6"
+			}
+		},
+		{
 			"name": "go: string after package",
 			"scope": [
 				"entity.name.package.go"
@@ -1757,6 +1930,15 @@
 			],
 			"settings": {
 				"foreground": "#34f1ff"
+			}
+		},
+		{
+			"name": "kotlin: string after package",
+			"scope": [
+				"entity.name.package.kotlin"
+			],
+			"settings": {
+				"foreground": "#a1d663"
 			}
 		},
 		{
@@ -1795,18 +1977,22 @@
 			}
 		},
 		{
-			"name": "java: import string",
-			"scope": "storage.modifier.import.java",
-			"settings": {
-				"foreground": "#e5c07b"
-			}
-		},
-		{
 			"name": "Storage",
 			"scope": "storage.other",
 			"settings": {
 				"fontStyle": "",
 				"foreground": "#9872A2"
+			}
+		},
+		{
+			"name": "swift: types",
+			"scope": [
+				"support.type.swift",
+				"support.type.vb.asp",
+				"support.type.any.swift"
+			],
+			"settings": {
+				"foreground": "#e5c07b"
 			}
 		},
 		{
@@ -2479,6 +2665,24 @@
 		 *  --------------------------------------------------------------------------------
 		 */
 		{
+			"name": "shell: punctuation { } ",
+			"scope": [
+				"punctuation.definition.group.shell"
+			],
+			"settings": {
+				"foreground": "#b255ff"
+			}
+		},
+		{
+			"name": "shell: punctuation [ ]  ",
+			"scope": [
+				"punctuation.definition.logical-expression.shell"
+			],
+			"settings": {
+				"foreground": "#e08169"
+			}
+		},
+		{
 			"name": "HTML Tags punctuation",
 			"scope": "punctuation.definition.tag.html, punctuation.definition.tag.begin, punctuation.definition.tag.end",
 			"settings": {
@@ -2608,6 +2812,13 @@
 			"scope": "punctuation.separator.key-value.ini",
 			"settings": {
 				"foreground": "#ff5e5e"
+			}
+		},
+		{
+			"name": "ruby: punctuation separator key-value",
+			"scope": "source.ruby punctuation.separator.key-value",
+			"settings": {
+				"foreground": "#fff000"
 			}
 		},
 		{
@@ -2900,6 +3111,24 @@
 			],
 			"settings": {
 				"foreground": "#cebd25"
+			}
+		},
+		{
+			"name": "shell: functions",
+			"scope": [
+				"entity.name.function.shell",
+			],
+			"settings": {
+				"foreground": "#4be6cc"
+			}
+		},
+		{
+			"name": "swift: functions",
+			"scope": [
+				"entity.name.function.swift",
+			],
+			"settings": {
+				"foreground": "#a6bb7f"
 			}
 		},
 		{
@@ -3979,15 +4208,6 @@
 		// 	}
 		// },
 		// {
-		// 	"name": "Go package name",
-		// 	"scope": [
-		// 		"entity.name.package.go"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#e5c07b"
-		// 	}
-		// },
-		// {
 		// 	"name": "elm prelude",
 		// 	"scope": [
 		// 		"support.type.prelude.elm"
@@ -4077,16 +4297,6 @@
 		// 	],
 		// 	"settings": {
 		// 		"foreground": "#e06c75"
-		// 	}
-		// },
-		// {
-		// 	"name": "types",
-		// 	"scope": [
-		// 		"support.type.swift",
-		// 		"support.type.vb.asp"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#e5c07b"
 		// 	}
 		// },
 		// {
