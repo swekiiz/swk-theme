@@ -51,6 +51,25 @@
 			}
 		},
 		{
+			"name": "groovy: source",
+			"scope": [
+				"source.groovy",
+				"source.groovy meta"
+			],
+			"settings": {
+				"foreground": "#e9e0c5"
+			}
+		},
+		{
+			"name": "ini: Default Text",
+			"scope": [
+				"source.ini"
+			],
+			"settings": {
+				"foreground": "#98c379"
+			}
+		},
+		{
 			"name": "haskell: source",
 			"scope": "source.haskell",
 			"settings": {
@@ -132,6 +151,13 @@
 			}
 		},
 		{
+			"name": "groovy: string single quoted",
+			"scope": "string.quoted.single.groovy",
+			"settings": {
+				"foreground": "#abcdef"
+			}
+		},
+		{
 			"name": "String double quoted",
 			"scope": "meta.var.expr string.quoted.double",
 			"settings": {
@@ -204,6 +230,15 @@
 			],
 			"settings": {
 				"foreground": "#87ca1c"
+			}
+		},
+		{
+			"name": "groovy: string double quoted",
+			"scope": [
+				"string.quoted.double.groovy"
+			],
+			"settings": {
+				"foreground": "#abcdef"
 			}
 		},
 		{
@@ -326,6 +361,26 @@
 			}
 		},
 		{
+			"name": "groovy: string single quoted punctuation",
+			"scope": [
+				"source.groovy string.quoted.single punctuation.definition.string.begin",
+				"source.groovy string.quoted.single punctuation.definition.string.end"
+			],
+			"settings": {
+				"foreground": "#fff000"
+			}
+		},
+		{
+			"name": "groovy: string double quoted punctuation",
+			"scope": [
+				"source.groovy string.quoted.double punctuation.definition.string.begin",
+				"source.groovy string.quoted.double punctuation.definition.string.end"
+			],
+			"settings": {
+				"foreground": "#fff000"
+			}
+		},
+		{
 			"name": "String in tag except HTML",
 			"scope": "meta.tag string.quoted.double",
 			"settings": {
@@ -403,11 +458,16 @@
 		},
 		{
 			"name": "env: key",
-			"scope": [
-				"variable.other.env"
-			],
+			"scope": "variable.other.env",
 			"settings": {
 				"foreground": "#f7bf76"
+			}
+		},
+		{
+			"name": "ini: key",
+			"scope": "keyword.other.definition.ini",
+			"settings": {
+				"foreground": "#6c9dcc"
 			}
 		},
 		// {
@@ -555,6 +615,24 @@
 			}
 		},
 		{
+			"name": "groovy: operator.arithmetic ( +, -, *, / )",
+			"scope": [
+				"keyword.operator.arithmetic.groovy"
+			],
+			"settings": {
+				"foreground": "#ff3e2e"
+			}
+		},
+		{
+			"name": "Accessor Operator (`.`)",
+			"scope": [
+				"punctuation.accessor"
+			],
+			"settings": {
+				"foreground": "#ff379b"
+			}
+		},
+		{
 			"name": "dart: operator.accessor ( . )",
 			"scope": [
 				"punctuation.dot.dart"
@@ -591,6 +669,15 @@
 			}
 		},
 		{
+			"name": "python: operator.accessor ( . )",
+			"scope": [
+				"punctuation.separator.period.python"
+			],
+			"settings": {
+				"foreground": "#ff00bf"
+			}
+		},
+		{
 			"name": "crystal: operator.accessor ( . )",
 			"scope": [
 				"punctuation.separator.method.crystal"
@@ -600,12 +687,30 @@
 			}
 		},
 		{
+			"name": "groovy: operator.accessor ( . )",
+			"scope": [
+				"keyword.operator.navigation.groovy"
+			],
+			"settings": {
+				"foreground": "#ff5e5e"
+			}
+		},
+		{
 			"name": "js: operator.assignment ( = )",
 			"scope": [
 				"keyword.operator.assignment"
 			],
 			"settings": {
 				"foreground": "#ff5e5e"
+			}
+		},
+		{
+			"name": "groovy: operator.assignment ( = )",
+			"scope": [
+				"keyword.operator.assignment.groovy"
+			],
+			"settings": {
+				"foreground": "#ff3e2e"
 			}
 		},
 		{
@@ -708,15 +813,6 @@
 			}
 		},
 		{
-			"name": "Accessor Operator (`.`)",
-			"scope": [
-				"punctuation.accessor"
-			],
-			"settings": {
-				"foreground": "#ff379b"
-			}
-		},
-		{
 			"name": "ts,tsx: semicolon (`;`)",
 			"scope": [
 				"punctuation.terminator.statement.ts",
@@ -765,12 +861,10 @@
 			}
 		},
 		{
-			"name": "python: (`.`) operator",
-			"scope": [
-				"punctuation.separator.period.python"
-			],
+			"name": "groovy: colon (`:`)",
+			"scope": "punctuation.definition.seperator.key-value.groovy",
 			"settings": {
-				"foreground": "#ff00bf"
+				"foreground": "#8fcf64"
 			}
 		},
 		{
@@ -811,6 +905,13 @@
 		{
 			"name": "dart: Control Flow (`if`, `else`, `switch`, `return`, etc.)",
 			"scope": "keyword.control.dart",
+			"settings": {
+				"foreground": "#ffd14a"
+			}
+		},
+		{
+			"name": "groovy: Control Flow (`if`, `else`, `switch`, `return`, etc.)",
+			"scope": "keyword.control.groovy",
 			"settings": {
 				"foreground": "#ffd14a"
 			}
@@ -881,12 +982,28 @@
 			}
 		},
 		{
+			"name": "groovy: New Operator (`$obj = new My_Class`)",
+			"scope": "keyword.control.new.groovy",
+			"settings": {
+				"foreground": "#00e043"
+			}
+		},
+		{
 			"name": "c#: New Operator (`$obj = new My_Class`)",
 			"scope": [
 				"keyword.other.new.cs"
 			],
 			"settings": {
 				"foreground": "#e49bf7"
+			}
+		},
+		{
+			"name": "groovy: exception operator (`throw`, `try`)",
+			"scope": [
+				"keyword.control.exception.groovy"
+			],
+			"settings": {
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
@@ -1018,6 +1135,13 @@
 			],
 			"settings": {
 				"foreground": "#f15050"
+			}
+		},
+		{
+			"name": "groovy: operator",
+			"scope": "source.groovy keyword.operator",
+			"settings": {
+				"foreground": "#ff3e2e"
 			}
 		},
 		{
@@ -1278,7 +1402,14 @@
 			}
 		},
 		{
-			"name": "JS Function parameter",
+			"name": "groovy: Parameter of function",
+			"scope": "source.groovy variable.parameter",
+			"settings": {
+				"foreground": "#8ab856"
+			}
+		},
+		{
+			"name": "js: Function parameter",
 			"scope": [
 				"variable.parameter.js"
 			],
@@ -1307,6 +1438,15 @@
 			}
 		},
 		{
+			"name": "groovy: Methods",
+			"scope": [
+				"meta.method.groovy"
+			],
+			"settings": {
+				"foreground": "#5a9ed6"
+			}
+		},
+		{
 			"name": "python: argument",
 			"scope": "meta.function-call.arguments.python",
 			"settings": {
@@ -1325,6 +1465,15 @@
 			"scope": "support.variable.dom,support.variable.property.dom",
 			"settings": {
 				"foreground": "#ec407a"
+			}
+		},
+		{
+			"name": "groovy: Variables",
+			"scope": [
+				"meta.definition.variable.name.groovy"
+			],
+			"settings": {
+				"foreground": "#c070c0"
 			}
 		},
 		{
@@ -1462,6 +1611,13 @@
 			],
 			"settings": {
 				"foreground": "#e1f80f"
+			}
+		},
+		{
+			"name": "groovy: Storage Type",
+			"scope": "source.groovy storage.type",
+			"settings": {
+				"foreground": "#ff7a22"
 			}
 		},
 		{
@@ -1629,15 +1785,15 @@
 		// 		"foreground": "#abb2bf"
 		// 	}
 		// },
-		// {
-		// 	"name": "Groovy import names",
-		// 	"scope": [
-		// 		"storage.modifier.import.groovy"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#e5c07b"
-		// 	}
-		// },
+		{
+			"name": "Groovy import names",
+			"scope": [
+				"storage.modifier.import.groovy"
+			],
+			"settings": {
+				"foreground": "#e5c07b"
+			}
+		},
 		{
 			"name": "java: import string",
 			"scope": "storage.modifier.import.java",
@@ -1717,7 +1873,7 @@
 				"constant.numeric.env"
 			],
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#f0ffee"
 			}
 		},
 		{
@@ -1746,12 +1902,28 @@
 			}
 		},
 		{
+			"name": "groovy: Number",
+			"scope": "constant.numeric.groovy",
+			"settings": {
+				"foreground": "#ff66ff"
+			}
+		},
+		{
 			"name": "Language Constant (`true`, `false, `null`, etc.)",
 			"scope": [
 				"constant.language"
 			],
 			"settings": {
 				"foreground": "#ff3e3e"
+			}
+		},
+		{
+			"name": "groovy: Language Constant (`true`, `false, `null`, etc.)",
+			"scope": [
+				"constant.language.groovy"
+			],
+			"settings": {
+				"foreground": "#69dbbb"
 			}
 		},
 		{
@@ -2432,6 +2604,13 @@
 			}
 		},
 		{
+			"name": "ini: punctuation separator key-value",
+			"scope": "punctuation.separator.key-value.ini",
+			"settings": {
+				"foreground": "#ff5e5e"
+			}
+		},
+		{
 			"name": "Template literal (``${...}``)",
 			"scope": [
 				"punctuation.definition.template-expression.begin",
@@ -2947,6 +3126,15 @@
 			],
 			"settings": {
 				"foreground": "#6089B4"
+			}
+		},
+		{
+			"name": "groovy: Inheritance",
+			"scope": [
+				"meta.definition.class.inherited.classes.groovy"
+			],
+			"settings": {
+				"foreground": "#a1c489"
 			}
 		},
 		{
@@ -3855,15 +4043,6 @@
 		// 	}
 		// },
 		// {
-		// 	"name": "Ini Default Text",
-		// 	"scope": [
-		// 		"source.ini"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#98c379"
-		// 	}
-		// },
-		// {
 		// 	"name": "Makefile prerequisities",
 		// 	"scope": [
 		// 		"meta.scope.prerequisites.makefile"
@@ -3879,33 +4058,6 @@
 		// 	],
 		// 	"settings": {
 		// 		"foreground": "#e5c07b"
-		// 	}
-		// },
-		// {
-		// 	"name": "Groovy Methods",
-		// 	"scope": [
-		// 		"meta.method.groovy"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#61afef"
-		// 	}
-		// },
-		// {
-		// 	"name": "Groovy Variables",
-		// 	"scope": [
-		// 		"meta.definition.variable.name.groovy"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#e06c75"
-		// 	}
-		// },
-		// {
-		// 	"name": "Groovy Inheritance",
-		// 	"scope": [
-		// 		"meta.definition.class.inherited.classes.groovy"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#98c379"
 		// 	}
 		// },
 		// {
