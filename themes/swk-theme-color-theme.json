@@ -243,6 +243,15 @@
 			}
 		},
 		{
+			"name": "xml: string double quoted",
+			"scope": [
+				"string.quoted.double.xml"
+			],
+			"settings": {
+				"foreground": "#6ebbae"
+			}
+		},
+		{
 			"name": "dart: import string",
 			"scope": [
 				"string.interpolated.single.dart"
@@ -331,6 +340,13 @@
 			}
 		},
 		{
+			"name": "xml: text",
+			"scope": "text.xml",
+			"settings": {
+				"foreground": "#cecece"
+			}
+		},
+		{
 			"name": "vue: import string",
 			"scope": [
 				"source.vue source.js string.quoted.module.js"
@@ -402,10 +418,17 @@
 		// 	}
 		// },
 		{
-			"name": "Tag Attribute",
+			"name": "Tag Attribute string punctuation",
 			"scope": "meta.tag punctuation.definition.string ",
 			"settings": {
-				"foreground": "#d0b340"
+				"foreground": "#fff000"
+			}
+		},
+		{
+			"name": "xml: Tag Attribute string punctuation",
+			"scope": "meta.tag.xml punctuation.definition.string ",
+			"settings": {
+				"foreground": "#ebaa33"
 			}
 		},
 		// {
@@ -2312,14 +2335,13 @@
 			}
 		},
 		{
-			"name": "XML Preprocessor (`<?xml ... ?>`)",
+			"name": "eml: Preprocessor (`<?xml ... ?>`)",
 			"scope": [
 				"meta.tag.preprocessor",
 				"meta.tag.preprocessor entity.name.tag",
-				"meta.tag.preprocessor punctuation.definition.tag"
 			],
 			"settings": {
-				"foreground": "#FFCC32"
+				"foreground": "#d0ff9a"
 			}
 		},
 		{
@@ -3013,6 +3035,27 @@
 			}
 		},
 		{
+			"name": "xml: tag",
+			"scope": "meta.tag.xml entity.name.tag",
+			"settings": {
+				"foreground": "#f08585"
+			}
+		},
+		{
+			"name": "xml: tag punctuation",
+			"scope": "meta.tag.xml punctuation.definition.tag.xml",
+			"settings": {
+				"foreground": "#cde04d"
+			}
+		},
+		{
+			"name": "xml: <?xml> tag punctuation",
+			"scope": "meta.tag.preprocessor punctuation.definition.tag",
+			"settings": {
+				"foreground": "#ff5e5e"
+			}
+		},
+		{
 			"name": "Tag Inline Source",
 			"scope": "meta.tag.inline source, text.html.php.source",
 			"settings": {
@@ -3053,10 +3096,27 @@
 			}
 		},
 		{
+			"name": "xml: Attributes",
+			"scope": [
+				"meta.tag.xml entity.other.attribute-name",
+				"text.xml entity.other.attribute-name"
+			],
+			"settings": {
+				"foreground": "#907ece"
+			}
+		},
+		{
 			"name": "Attribute IDs",
 			"scope": "entity.other.attribute-name.id",
 			"settings": {
 				"foreground": "#a27272"
+			}
+		},
+		{
+			"name": "jsx: jsx tag punctuation",
+			"scope": "meta.tag.jsx punctuation.definition.tag.jsx",
+			"settings": {
+				"foreground": "#fff461"
 			}
 		},
 		{
