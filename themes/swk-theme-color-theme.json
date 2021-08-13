@@ -215,6 +215,13 @@
 			}
 		},
 		{
+			"name": "tsx: string double quoted",
+			"scope": "string.quoted.double.tsx",
+			"settings": {
+				"foreground": "#69f0ae"
+			}
+		},
+		{
 			"name": "dart: string double quoted",
 			"scope": [
 				"source.dart string.interpolated.double.dart"
@@ -539,7 +546,7 @@
 			"name": "Tag Attribute string punctuation",
 			"scope": "meta.tag punctuation.definition.string ",
 			"settings": {
-				"foreground": "#fff000"
+				"foreground": "#fada50"
 			}
 		},
 		{
