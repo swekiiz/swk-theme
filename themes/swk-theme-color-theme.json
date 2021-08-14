@@ -87,6 +87,15 @@
 			}
 		},
 		{
+			"name": "cabal: source",
+			"scope": [
+				"source.cabal",
+			],
+			"settings": {
+				"foreground": "#bfb5c0"
+			}
+		},
+		{
 			"name": "shell: source",
 			"scope": [
 				"source.shell",
@@ -1274,6 +1283,13 @@
 			}
 		},
 		{
+			"name": "cabal: operator",
+			"scope": "source.cabal keyword.operator",
+			"settings": {
+				"foreground": "#ff3e2e"
+			}
+		},
+		{
 			"name": "c++: using keyword",
 			"scope": [
 				"keyword.other.using.directive.cpp"
@@ -1372,6 +1388,15 @@
 			],
 			"settings": {
 				"foreground": "#ffd45e"
+			}
+		},
+		{
+			"name": "cabal: keyword",
+			"scope": [
+				"keyword.other.cabal",
+			],
+			"settings": {
+				"foreground": "#616cd1"
 			}
 		},
 		/** --------------------------------------------------------------------------------
@@ -1716,6 +1741,13 @@
 			"scope": "source.dart meta.declaration.dart",
 			"settings": {
 				"foreground": "#daa22a"
+			}
+		},
+		{
+			"name": "cabal: section name",
+			"scope": "entity.name.section.cabal",
+			"settings": {
+				"foreground": "#ffe082"
 			}
 		},
 		/** --------------------------------------------------------------------------------
@@ -2092,6 +2124,13 @@
 			],
 			"settings": {
 				"foreground": "#22aed1"
+			}
+		},
+		{
+			"name": "cabal: Number",
+			"scope": "constant.numeric.cabal",
+			"settings": {
+				"foreground": "#ffb865"
 			}
 		},
 		{
@@ -3145,6 +3184,15 @@
 			],
 			"settings": {
 				"foreground": "#9ffcf2"
+			}
+		},
+		{
+			"name": "cabal: functions",
+			"scope": [
+				"entity.name.function.cabal",
+			],
+			"settings": {
+				"foreground": "#80cbae"
 			}
 		},
 		{
