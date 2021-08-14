@@ -258,6 +258,15 @@
 			}
 		},
 		{
+			"name": "yaml: string double quoted",
+			"scope": [
+				"string.quoted.double.yaml"
+			],
+			"settings": {
+				"foreground": "#95b470"
+			}
+		},
+		{
 			"name": "F#: string double quoted",
 			"scope": [
 				"string.quoted.double.fsharp"
@@ -404,6 +413,13 @@
 			}
 		},
 		{
+			"name": "yaml: string unquoted",
+			"scope": "text.yaml.jinja string.unquoted",
+			"settings": {
+				"foreground": "#9f99b8"
+			}
+		},
+		{
 			"name": "String single quoted punctuation",
 			"scope": "string.quoted.single punctuation.definition.string.begin,string.quoted.single punctuation.definition.string.end",
 			"settings": {
@@ -418,6 +434,16 @@
 			],
 			"settings": {
 				"foreground": "#fff000"
+			}
+		},
+		{
+			"name": "yaml: string double quoted punctuation",
+			"scope": [
+				"string.quoted.double.yaml punctuation.definition.string.begin.yaml",
+				"string.quoted.double.yaml punctuation.definition.string.end.yaml"
+			],
+			"settings": {
+				"foreground": "#a962bb"
 			}
 		},
 		{
@@ -884,6 +910,13 @@
 			}
 		},
 		{
+			"name": "yaml: (`-`) operator",
+			"scope": "punctuation.definition.block.sequence.item.yaml",
+			"settings": {
+				"foreground": "#f7c376"
+			}
+		},
+		{
 			"name": "js, ts, jsx, tsx: (`=`) assignment operator",
 			"scope": "meta.tag keyword.operator.assignment",
 			"settings": {
@@ -952,6 +985,13 @@
 			],
 			"settings": {
 				"foreground": "#ff5e5e"
+			}
+		},
+		{
+			"name": "yaml: colon (`:`)",
+			"scope": "punctuation.separator.key-value.mapping.yaml",
+			"settings": {
+				"foreground": "#f7c376"
 			}
 		},
 		{
@@ -1744,6 +1784,13 @@
 			}
 		},
 		{
+			"name": "yaml: section name",
+			"scope": "entity.name.tag.yaml",
+			"settings": {
+				"foreground": "#d64b4b"
+			}
+		},
+		{
 			"name": "cabal: section name",
 			"scope": "entity.name.section.cabal",
 			"settings": {
@@ -2104,6 +2151,15 @@
 		{
 			"name": "F#: Number",
 			"scope": "source.fsharp.fsl constant.numeric",
+			"settings": {
+				"foreground": "#5bbde4"
+			}
+		},
+		{
+			"name": "yaml: number",
+			"scope": [
+				"text.yaml.jinja constant.numeric"
+			],
 			"settings": {
 				"foreground": "#5bbde4"
 			}
@@ -4480,13 +4536,6 @@
 		// 	],
 		// 	"settings": {
 		// 		"foreground": "#e5c07b"
-		// 	}
-		// },
-		// {
-		// 	"name": "punctuation.definition.block.sequence.item.yaml",
-		// 	"scope": "punctuation.definition.block.sequence.item.yaml",
-		// 	"settings": {
-		// 		"foreground": "#abb2bf"
 		// 	}
 		// },
 		// {
