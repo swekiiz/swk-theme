@@ -263,7 +263,7 @@
 				"string.quoted.double.yaml"
 			],
 			"settings": {
-				"foreground": "#95b470"
+				"foreground": "#a089fd"
 			}
 		},
 		{
@@ -416,7 +416,7 @@
 			"name": "yaml: string unquoted",
 			"scope": "text.yaml.jinja string.unquoted",
 			"settings": {
-				"foreground": "#9f99b8"
+				"foreground": "#f7c376"
 			}
 		},
 		{
@@ -443,7 +443,7 @@
 				"string.quoted.double.yaml punctuation.definition.string.end.yaml"
 			],
 			"settings": {
-				"foreground": "#a962bb"
+				"foreground": "#69f0ae"
 			}
 		},
 		{
@@ -913,7 +913,7 @@
 			"name": "yaml: (`-`) operator",
 			"scope": "punctuation.definition.block.sequence.item.yaml",
 			"settings": {
-				"foreground": "#f7c376"
+				"foreground": "#a5f776"
 			}
 		},
 		{
@@ -991,7 +991,7 @@
 			"name": "yaml: colon (`:`)",
 			"scope": "punctuation.separator.key-value.mapping.yaml",
 			"settings": {
-				"foreground": "#f7c376"
+				"foreground": "#a5f776"
 			}
 		},
 		{
@@ -1787,7 +1787,7 @@
 			"name": "yaml: section name",
 			"scope": "entity.name.tag.yaml",
 			"settings": {
-				"foreground": "#d64b4b"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
@@ -2161,7 +2161,7 @@
 				"text.yaml.jinja constant.numeric"
 			],
 			"settings": {
-				"foreground": "#5bbde4"
+				"foreground": "#95d2ee"
 			}
 		},
 		{
@@ -2996,6 +2996,16 @@
 			],
 			"settings": {
 				"foreground": "#D77676"
+			}
+		},
+		{
+			"name": "yaml: square punctuation (`[...]`)",
+			"scope": [
+				"punctuation.definition.sequence.begin.yaml",
+				"punctuation.definition.sequence.end.yaml"
+			],
+			"settings": {
+				"foreground": "#C9E9E0"
 			}
 		},
 		{
