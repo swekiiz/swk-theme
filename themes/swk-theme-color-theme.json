@@ -111,7 +111,10 @@
 		 */
 		{
 			"name": "Comments",
-			"scope": "comment, punctuation.definition.comment",
+			"scope": [
+				"comment",
+				"punctuation.definition.comment"
+			],
 			"settings": {
 				"foreground": "#808080"
 			}
@@ -123,7 +126,7 @@
 				"comment punctuation.definition.block"
 			],
 			"settings": {
-				"foreground": "#6D6D6D",
+				"foreground": "#596b74",
 			}
 		},
 		{
