@@ -126,7 +126,7 @@
 				"comment punctuation.definition.block"
 			],
 			"settings": {
-				"foreground": "#596b74",
+				"foreground": "#696999",
 			}
 		},
 		{
@@ -835,6 +835,26 @@
 			}
 		},
 		{
+			"name": "ts,tsx: comma in parameter ( , )",
+			"scope": [
+				"punctuation.separator.parameter.ts",
+				"punctuation.separator.parameter.tsx"
+			],
+			"settings": {
+				"foreground": "#aeffd0"
+			}
+		},
+		{
+			"name": "ts,tsx: comma in object-binding parameter ( , )",
+			"scope": [
+				"punctuation.separator.comma.ts",
+				"punctuation.separator.comma.tsx"
+			],
+			"settings": {
+				"foreground": "#b1be67"
+			}
+		},
+		{
 			"name": "dart: comma ( , )",
 			"scope": [
 				"source.dart punctuation.comma.dart"
@@ -991,6 +1011,13 @@
 			}
 		},
 		{
+			"name": "js,ts: colon in destructuring (`:`)",
+			"scope": "punctuation.destructuring",
+			"settings": {
+				"foreground": "#d9ff00"
+			}
+		},
+		{
 			"name": "yaml: colon (`:`)",
 			"scope": "punctuation.separator.key-value.mapping.yaml",
 			"settings": {
@@ -1134,7 +1161,7 @@
 			"name": "Keyword Control At Rule (`@mixin`, `@import`, etc.)",
 			"scope": "keyword.control.at-rule punctuation",
 			"settings": {
-				"foreground": "#f4e8ff"
+				"foreground": "#9575cd"
 			}
 		},
 		{
@@ -1507,6 +1534,16 @@
 				"foreground": "#6696ca"
 			}
 		},
+		// {
+		// 	"name": "ts: array variable",
+		// 	"scope": [
+		// 		"meta.array.literal.ts variable.other.readwrite.ts",
+		// 		"meta.array.literal.tsx variable.other.readwrite.tsx"
+		// 	],
+		// 	"settings": {
+		// 		"foreground": "#d0b2d8"
+		// 	}
+		// },
 		{
 			"name": "Normal Variable",
 			"scope": "variable.other.normal",
@@ -2093,14 +2130,20 @@
 		},
 		{
 			"name": "TS punctuation type <type>",
-			"scope": "punctuation.definition.typeparameters.begin,punctuation.definition.typeparameters.end",
+			"scope": [
+				"punctuation.definition.typeparameters.begin",
+				"punctuation.definition.typeparameters.end"
+			],
 			"settings": {
-				"foreground": "#6777bd"
+				"foreground": "#6777be"
 			}
 		},
 		{
 			"name": "c#: punctuation type <type>",
-			"scope": "punctuation.definition.typeparameters.begin,punctuation.definition.typeparameters.end",
+			"scope": [
+				"source.cs punctuation.definition.typeparameters.begin",
+				"source.cs punctuation.definition.typeparameters.end"
+			],
 			"settings": {
 				"foreground": "#ff5e5e"
 			}
@@ -2126,6 +2169,18 @@
 			],
 			"settings": {
 				"foreground": "#75beb8"
+			}
+		},
+		{
+			"name": "js,ts: Decimal Number",
+			"scope": [
+				"source.js constant.numeric",
+				"source.ts constant.numeric",
+				"source.jsx constant.numeric",
+				"source.tsx constant.numeric",
+			],
+			"settings": {
+				"foreground": "#a2c0be"
 			}
 		},
 		{
@@ -2165,6 +2220,15 @@
 			],
 			"settings": {
 				"foreground": "#95d2ee"
+			}
+		},
+		{
+			"name": "css: number",
+			"scope": [
+				"constant.numeric.css"
+			],
+			"settings": {
+				"foreground": "#b6c3cf"
 			}
 		},
 		{
@@ -2383,7 +2447,7 @@
 			"name": "CSS: @include",
 			"scope": "keyword.control.at-rule.include",
 			"settings": {
-				"foreground": "#fc5454",
+				"foreground": "#d88383",
 			}
 		},
 		{
@@ -2394,17 +2458,38 @@
 			}
 		},
 		{
+			"name": "CSS: @at-root",
+			"scope": "keyword.control.at-rule.at-root",
+			"settings": {
+				"foreground": "#6f7ca1"
+			}
+		},
+		{
+			"name": "CSS: @each",
+			"scope": "keyword.control.each",
+			"settings": {
+				"foreground": "#9575CD"
+			}
+		},
+		{
 			"name": "CSS: @media",
 			"scope": "keyword.control.at-rule.media",
 			"settings": {
-				"foreground": "#23c566"
+				"foreground": "#6fa184"
 			}
 		},
 		{
 			"name": "CSS: @mixin",
 			"scope": "keyword.control.at-rule.mixin",
 			"settings": {
-				"foreground": "#eeff00"
+				"foreground": "#c1c76b"
+			}
+		},
+		{
+			"name": "CSS: @apply",
+			"scope": "keyword.control.at-rule.apply.tailwind",
+			"settings": {
+				"foreground": "#6bc7b3"
 			}
 		},
 		{
@@ -2413,7 +2498,7 @@
 				"meta.property-value"
 			],
 			"settings": {
-				"foreground": "#69f0ae"
+				"foreground": "#92ccb0"
 			}
 		},
 		{
@@ -2934,7 +3019,7 @@
 				"punctuation.section.embedded"
 			],
 			"settings": {
-				"foreground": "#bd9117"
+				"foreground": "#d77f2d"
 			}
 		},
 		{
@@ -2943,7 +3028,7 @@
 				"punctuation.quasi.element"
 			],
 			"settings": {
-				"foreground": "#bd9117"
+				"foreground": "#d77f2d"
 			}
 		},
 		{
