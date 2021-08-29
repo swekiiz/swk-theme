@@ -61,6 +61,15 @@
 			}
 		},
 		{
+			"name": "svelte: source",
+			"scope": [
+				"source.svelte",
+			],
+			"settings": {
+				"foreground": "#929dad"
+			}
+		},
+		{
 			"name": "groovy: source",
 			"scope": [
 				"source.groovy",
@@ -173,6 +182,13 @@
 			"scope": "meta",
 			"settings": {
 				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "svelte: string",
+			"scope": "string.quoted.svelte",
+			"settings": {
+				"foreground": "#51ccb1"
 			}
 		},
 		{
@@ -2984,6 +3000,16 @@
 			}
 		},
 		{
+			"name": "svelte: embedded",
+			"scope": [
+				"punctuation.section.embedded.begin.svelte",
+				"punctuation.section.embedded.end.svelte"
+			],
+			"settings": {
+				"foreground": "#e682ff"
+			}
+		},
+		{
 			"name": "Class Variable",
 			"scope": "punctuation.separator.variable",
 			"settings": {
@@ -3771,6 +3797,35 @@
 			"scope": "source.vue entity.name.tag.style.html",
 			"settings": {
 				"foreground": "#d469bd"
+			}
+		},
+		{
+			"name": "svelte: script lang attribute",
+			"scope": [
+				"source.svelte meta.script.svelte meta.lang.ts.svelte meta.tag.start.svelte meta.attribute.lang.svelte entity.other.attribute-name.svelte",
+			],
+			"settings": {
+				"foreground": "#f3af4a"
+			}
+		},
+		{
+			"name": "svelte: script tag",
+			"scope": [
+				"source.svelte meta.script.svelte meta.tag.start.svelte entity.name.tag.svelte",
+				"source.svelte meta.script.svelte meta.tag.end.svelte entity.name.tag.svelte"
+			],
+			"settings": {
+				"foreground": "#6078e2"
+			}
+		},
+		{
+			"name": "svelte: style tag",
+			"scope": [
+				"source.svelte meta.style.svelte meta.tag.start.svelte entity.name.tag.svelte",
+				"source.svelte meta.style.svelte meta.tag.end.svelte entity.name.tag.svelte"
+			],
+			"settings": {
+				"foreground": "#b6c4a9"
 			}
 		},
 		/** --------------------------------------------------------------------------------
