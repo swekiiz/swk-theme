@@ -704,6 +704,13 @@
 			}
 		},
 		{
+			"name": "solidity: Operators",
+			"scope": "source.solidity keyword.operator",
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
 			"name": "Import module JS",
 			"scope": [
 				"keyword.operator.module"
@@ -722,6 +729,13 @@
 			],
 			"settings": {
 				"foreground": "#f7d064"
+			}
+		},
+		{
+			"name": "solidity: operator.arithmetic ( +, -, *, / )",
+			"scope": "source.solidity keyword.operator.arithmetic",
+			"settings": {
+				"foreground": "#ffffff"
 			}
 		},
 		{
@@ -788,6 +802,13 @@
 			}
 		},
 		{
+			"name": "solidity: Accessor Operator (`.`)",
+			"scope": "source.solidity punctuation.accessor",
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
 			"name": "ruby: operator.accessor ( . )",
 			"scope": [
 				"punctuation.separator.method.ruby"
@@ -821,6 +842,13 @@
 			],
 			"settings": {
 				"foreground": "#ff5e5e"
+			}
+		},
+		{
+			"name": "solidity: operator.assignment ( = )",
+			"scope": "source.solidity keyword.operator.assignment",
+			"settings": {
+				"foreground": "#ffffff"
 			}
 		},
 		{
@@ -904,6 +932,13 @@
 			],
 			"settings": {
 				"foreground": "#ff5e5e"
+			}
+		},
+		{
+			"name": "solidity: import keyword",
+			"scope": "source.solidity keyword.control.import",
+			"settings": {
+				"foreground": "#ffffff"
 			}
 		},
 		{
@@ -1160,6 +1195,15 @@
 			}
 		},
 		{
+			"name": "solidity: Control Flow (`if`, `else`, `return`, etc.)",
+			"scope": [
+				"source.solidity keyword.control"
+			],
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
 			"name": "Control Flow (`if`, `else`)",
 			"scope": "keyword.control.conditional,keyword.control.import",
 			"settings": {
@@ -1220,7 +1264,7 @@
 				"source.solidity keyword.operator.mapping"
 			],
 			"settings": {
-				"foreground": "#ffff00"
+				"foreground": "#ffffff"
 			}
 		},
 		{
@@ -1247,7 +1291,7 @@
 			"name": "solidity: function keyword",
 			"scope": "source.solidity storage.type.function",
 			"settings": {
-				"foreground": "#9575cd"
+				"foreground": "#ffffff"
 			}
 		},
 		{
@@ -1342,6 +1386,20 @@
 			}
 		},
 		{
+			"name": "solidity: `this` keyword",
+			"scope": "source.solidity variable.language.this",
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "solidity: `super` keyword",
+			"scope": "source.solidity variable.language.super",
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
 			"name": "c++: ( # )",
 			"scope": [
 				"punctuation.definition.directive.cpp",
@@ -1394,6 +1452,27 @@
 			}
 		},
 		{
+			"name": "solidity: using keyword",
+			"scope": "source.solidity keyword.control.using",
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "solidity: for keyword",
+			"scope": "source.solidity keyword.control.for",
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "solidity: require keyword",
+			"scope": "source.solidity keyword.control.exceptions",
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
 			"name": "c++: struct keyword",
 			"scope": [
 				"storage.type.struct.cpp",
@@ -1401,6 +1480,13 @@
 			],
 			"settings": {
 				"foreground": "#fce941"
+			}
+		},
+		{
+			"name": "solidity: struct keyword",
+			"scope": "source.solidity storage.type.struct",
+			"settings": {
+				"foreground": "#ffffff"
 			}
 		},
 		{
@@ -1437,7 +1523,7 @@
 				"source.solidity storage.type.constructor",
 			],
 			"settings": {
-				"foreground": "#d463df"
+				"foreground": "#ffffff"
 			}
 		},
 		{
@@ -1446,7 +1532,7 @@
 				"source.solidity constant.other.pragma",
 			],
 			"settings": {
-				"foreground": "#f5b400"
+				"foreground": "#ffffff"
 			}
 		},
 		{
@@ -1455,7 +1541,16 @@
 				"source.solidity keyword.control.pragma",
 			],
 			"settings": {
-				"foreground": "#9e9886"
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "solidity: solidity in pragma",
+			"scope": [
+				"source.solidity entity.name.tag.pragma",
+			],
+			"settings": {
+				"foreground": "#ffffff"
 			}
 		},
 		{
@@ -1464,7 +1559,7 @@
 				"source.solidity keyword.control.assembly",
 			],
 			"settings": {
-				"foreground": "#5eff5e"
+				"foreground": "#ffffff"
 			}
 		},
 		{
@@ -1473,7 +1568,14 @@
 				"source.solidity keyword.control.flow.return",
 			],
 			"settings": {
-				"foreground": "#ffd45e"
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "solidity: event keyword",
+			"scope": "source.solidity storage.type.event",
+			"settings": {
+				"foreground": "#ffffff"
 			}
 		},
 		{
@@ -1692,6 +1794,33 @@
 			}
 		},
 		{
+			"name": "solidity: Function parameter",
+			"scope": [
+				"source.solidity variable.parameter.function"
+			],
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "solidity: Function parameter other",
+			"scope": [
+				"source.solidity variable.parameter.other"
+			],
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "solidity: Event parameter",
+			"scope": [
+				"source.solidity variable.parameter.event"
+			],
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
 			"name": "js: Function parameter",
 			"scope": [
 				"variable.parameter.js"
@@ -1760,7 +1889,21 @@
 			}
 		},
 		{
-			"name": "C Variables",
+			"name": "solidity: contract name",
+			"scope": "source.solidity entity.name.type.contract",
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "solidity: library name",
+			"scope": "source.solidity entity.name.type.library",
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "c: Variables",
 			"scope": "variable.c",
 			"settings": {
 				"foreground": "#D0D0D0"
@@ -1921,35 +2064,100 @@
 			"name": "solidity: builtin types",
 			"scope": "source.solidity support.type.primitive",
 			"settings": {
-				"foreground": "#c08ca5"
+				"foreground": "#ffffff"
 			}
 		},
 		{
 			"name": "solidity: access types",
 			"scope": "source.solidity storage.type.modifier.access",
 			"settings": {
-				"foreground": "#7d99f1"
+				"foreground": "#ffffff"
 			}
 		},
 		{
 			"name": "solidity: modify types",
 			"scope": "source.solidity storage.type.modifier.readonly",
 			"settings": {
-				"foreground": "#73d3d6"
+				"foreground": "#ffffff"
 			}
 		},
 		{
 			"name": "solidity: indexed types",
 			"scope": "source.solidity storage.type.modifier.indexed",
 			"settings": {
-				"foreground": "#bce1e2"
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "solidity: extended scope types",
+			"scope": "source.solidity storage.type.modifier.extendedscope",
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "solidity: transaction types",
+			"scope": "source.solidity variable.language.transaction",
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "solidity: payable types",
+			"scope": "source.solidity storage.type.modifier.payable",
+			"settings": {
+				"foreground": "#ffffff"
 			}
 		},
 		{
 			"name": "solidity: mapping types",
 			"scope": "source.solidity storage.type.mapping",
 			"settings": {
-				"foreground": "#c26558"
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "solidity: library types",
+			"scope": "source.solidity storage.type.library",
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "solidity: struct types",
+			"scope": "source.solidity entity.name.type.struct",
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "solidity: interface",
+			"scope": "source.solidity storage.type.interface",
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "solidity: contract extend name",
+			"scope": "source.solidity entity.name.type.contract.extend",
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "solidity: abi",
+			"scope": "source.solidity variable.language.builtin.abi",
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "solidity: storage type in assembly",
+			"scope": [
+				"source.solidity storage.type.assembly",
+			],
+			"settings": {
+				"foreground": "#ffffff"
 			}
 		},
 		{
@@ -2104,12 +2312,21 @@
 			}
 		},
 		{
+			"name": "solidity: Storage `Contract`",
+			"scope": [
+				"source.solidity storage.type.contract"
+			],
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
 			"name": "solidity: Storage Modifier (` is `)",
 			"scope": [
 				"source.solidity storage.modifier"
 			],
 			"settings": {
-				"foreground": "#95ddff"
+				"foreground": "#ffffff"
 			}
 		},
 		// {
@@ -2240,6 +2457,13 @@
 			}
 		},
 		{
+			"name": "solidity: Number",
+			"scope": "source.solidity constant.numeric",
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
 			"name": "yaml: number",
 			"scope": [
 				"text.yaml.jinja constant.numeric"
@@ -2290,12 +2514,28 @@
 			}
 		},
 		{
+			"name": "solidity: Scientific Number",
+			"scope": "source.solidity constant.numeric.scientific",
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
 			"name": "Language Constant (`true`, `false, `null`, etc.)",
 			"scope": [
 				"constant.language"
 			],
 			"settings": {
 				"foreground": "#ff3e3e"
+			}
+		},
+		{
+			"name": "solidity: Language Constant",
+			"scope": [
+				"source.solidity constant.language"
+			],
+			"settings": {
+				"foreground": "#ffffff"
 			}
 		},
 		{
@@ -3018,7 +3258,7 @@
 			"name": "solidity: scope punctuation {} ",
 			"scope": "source.solidity punctuation.brace.curly",
 			"settings": {
-				"foreground": "#ffff11"
+				"foreground": "#ffffff"
 			}
 		},
 		{
@@ -3358,6 +3598,13 @@
 			}
 		},
 		{
+			"name": "solidity: Language Method/Function (`keccak256`, `ecrecover`, etc.)",
+			"scope": "source.solidity support.function",
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
 			"name": "At Rule Function Name",
 			"scope": "meta.at-rule support.function",
 			"settings": {
@@ -3518,7 +3765,7 @@
 				"source.solidity entity.name.function"
 			],
 			"settings": {
-				"foreground": "#e2d73f"
+				"foreground": "#ffffff"
 			}
 		},
 		{
@@ -3660,6 +3907,13 @@
 			"scope": "entity.name.type",
 			"settings": {
 				"foreground": "#ff5e5e"
+			}
+		},
+		{
+			"name": "solidity: Type Name",
+			"scope": "source.solidity entity.name.type",
+			"settings": {
+				"foreground": "#ffffff"
 			}
 		},
 		{
