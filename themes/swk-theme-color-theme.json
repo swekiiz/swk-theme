@@ -96,6 +96,15 @@
 			}
 		},
 		{
+			"name": "solidity: source",
+			"scope": [
+				"source.solidity",
+			],
+			"settings": {
+				"foreground": "#9b65ce"
+			}
+		},
+		{
 			"name": "cabal: source",
 			"scope": [
 				"source.cabal",
@@ -247,6 +256,13 @@
 			"scope": "string.quoted.double.tsx",
 			"settings": {
 				"foreground": "#69f0ae"
+			}
+		},
+		{
+			"name": "solidity: string double quoted",
+			"scope": "source.solidity string.quoted.double",
+			"settings": {
+				"foreground": "#e2f59d"
 			}
 		},
 		{
@@ -707,7 +723,7 @@
 			"name": "solidity: Operators",
 			"scope": "source.solidity keyword.operator",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#ffde2a"
 			}
 		},
 		{
@@ -735,7 +751,7 @@
 			"name": "solidity: operator.arithmetic ( +, -, *, / )",
 			"scope": "source.solidity keyword.operator.arithmetic",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#ffde2a"
 			}
 		},
 		{
@@ -805,7 +821,7 @@
 			"name": "solidity: Accessor Operator (`.`)",
 			"scope": "source.solidity punctuation.accessor",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#a3ca70"
 			}
 		},
 		{
@@ -848,7 +864,7 @@
 			"name": "solidity: operator.assignment ( = )",
 			"scope": "source.solidity keyword.operator.assignment",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#ffde2a"
 			}
 		},
 		{
@@ -899,6 +915,13 @@
 			}
 		},
 		{
+			"name": "solidity: comma ( , )",
+			"scope": "source.solidity punctuation.separator",
+			"settings": {
+				"foreground": "#beaa67"
+			}
+		},
+		{
 			"name": "dart: comma ( , )",
 			"scope": [
 				"source.dart punctuation.comma.dart"
@@ -938,7 +961,7 @@
 			"name": "solidity: import keyword",
 			"scope": "source.solidity keyword.control.import",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#e0c15b"
 			}
 		},
 		{
@@ -1026,6 +1049,13 @@
 			],
 			"settings": {
 				"foreground": "#d5ccff"
+			}
+		},
+		{
+			"name": "solidity: semicolon (`;`)",
+			"scope": "source.solidity punctuation.terminator.statement",
+			"settings": {
+				"foreground": "#fd8b8b"
 			}
 		},
 		{
@@ -1200,7 +1230,7 @@
 				"source.solidity keyword.control"
 			],
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#5087ff"
 			}
 		},
 		{
@@ -1264,7 +1294,7 @@
 				"source.solidity keyword.operator.mapping"
 			],
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
@@ -1291,7 +1321,7 @@
 			"name": "solidity: function keyword",
 			"scope": "source.solidity storage.type.function",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#dfdf00"
 			}
 		},
 		{
@@ -1389,14 +1419,14 @@
 			"name": "solidity: `this` keyword",
 			"scope": "source.solidity variable.language.this",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#009e69"
 			}
 		},
 		{
 			"name": "solidity: `super` keyword",
 			"scope": "source.solidity variable.language.super",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#df7e7e"
 			}
 		},
 		{
@@ -1455,21 +1485,21 @@
 			"name": "solidity: using keyword",
 			"scope": "source.solidity keyword.control.using",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#d1a5a4"
 			}
 		},
 		{
 			"name": "solidity: for keyword",
 			"scope": "source.solidity keyword.control.for",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#87df9d"
 			}
 		},
 		{
 			"name": "solidity: require keyword",
 			"scope": "source.solidity keyword.control.exceptions",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#82dcec"
 			}
 		},
 		{
@@ -1486,7 +1516,7 @@
 			"name": "solidity: struct keyword",
 			"scope": "source.solidity storage.type.struct",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#459b8c"
 			}
 		},
 		{
@@ -1523,7 +1553,7 @@
 				"source.solidity storage.type.constructor",
 			],
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#ff6565"
 			}
 		},
 		{
@@ -1532,7 +1562,7 @@
 				"source.solidity constant.other.pragma",
 			],
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#d69595"
 			}
 		},
 		{
@@ -1541,7 +1571,7 @@
 				"source.solidity keyword.control.pragma",
 			],
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#90b6a9"
 			}
 		},
 		{
@@ -1550,7 +1580,7 @@
 				"source.solidity entity.name.tag.pragma",
 			],
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#eca869"
 			}
 		},
 		{
@@ -1559,7 +1589,7 @@
 				"source.solidity keyword.control.assembly",
 			],
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#db29ff"
 			}
 		},
 		{
@@ -1568,14 +1598,14 @@
 				"source.solidity keyword.control.flow.return",
 			],
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#ff5e5e"
 			}
 		},
 		{
 			"name": "solidity: event keyword",
 			"scope": "source.solidity storage.type.event",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#616cd1"
 			}
 		},
 		{
@@ -1799,7 +1829,7 @@
 				"source.solidity variable.parameter.function"
 			],
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#8ecc8c"
 			}
 		},
 		{
@@ -1808,7 +1838,7 @@
 				"source.solidity variable.parameter.other"
 			],
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#97acd8"
 			}
 		},
 		{
@@ -1817,7 +1847,7 @@
 				"source.solidity variable.parameter.event"
 			],
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#ff8686"
 			}
 		},
 		{
@@ -1892,14 +1922,14 @@
 			"name": "solidity: contract name",
 			"scope": "source.solidity entity.name.type.contract",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#63b6e6"
 			}
 		},
 		{
 			"name": "solidity: library name",
 			"scope": "source.solidity entity.name.type.library",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#5770ff"
 			}
 		},
 		{
@@ -2064,91 +2094,91 @@
 			"name": "solidity: builtin types",
 			"scope": "source.solidity support.type.primitive",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#c0a4ff"
 			}
 		},
 		{
 			"name": "solidity: access types",
 			"scope": "source.solidity storage.type.modifier.access",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#ffd900"
 			}
 		},
 		{
 			"name": "solidity: modify types",
 			"scope": "source.solidity storage.type.modifier.readonly",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#c57140"
 			}
 		},
 		{
 			"name": "solidity: indexed types",
 			"scope": "source.solidity storage.type.modifier.indexed",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#86b1ff"
 			}
 		},
 		{
 			"name": "solidity: extended scope types",
 			"scope": "source.solidity storage.type.modifier.extendedscope",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#ce6993"
 			}
 		},
 		{
 			"name": "solidity: transaction types",
 			"scope": "source.solidity variable.language.transaction",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#49dda4"
 			}
 		},
 		{
 			"name": "solidity: payable types",
 			"scope": "source.solidity storage.type.modifier.payable",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#ff5858"
 			}
 		},
 		{
 			"name": "solidity: mapping types",
 			"scope": "source.solidity storage.type.mapping",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#cfda3c"
 			}
 		},
 		{
 			"name": "solidity: library types",
 			"scope": "source.solidity storage.type.library",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#ffff11"
 			}
 		},
 		{
 			"name": "solidity: struct types",
 			"scope": "source.solidity entity.name.type.struct",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#f3e08a"
 			}
 		},
 		{
 			"name": "solidity: interface",
 			"scope": "source.solidity storage.type.interface",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#46e66e"
 			}
 		},
 		{
 			"name": "solidity: contract extend name",
 			"scope": "source.solidity entity.name.type.contract.extend",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#5770ff"
 			}
 		},
 		{
 			"name": "solidity: abi",
 			"scope": "source.solidity variable.language.builtin.abi",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#1b93d8"
 			}
 		},
 		{
@@ -2317,7 +2347,7 @@
 				"source.solidity storage.type.contract"
 			],
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#cb7dff"
 			}
 		},
 		{
@@ -2326,7 +2356,7 @@
 				"source.solidity storage.modifier"
 			],
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#cfc24a"
 			}
 		},
 		// {
@@ -2460,7 +2490,7 @@
 			"name": "solidity: Number",
 			"scope": "source.solidity constant.numeric",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#f5b6b6"
 			}
 		},
 		{
@@ -2517,7 +2547,7 @@
 			"name": "solidity: Scientific Number",
 			"scope": "source.solidity constant.numeric.scientific",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#f5b6f5"
 			}
 		},
 		{
@@ -2535,7 +2565,7 @@
 				"source.solidity constant.language"
 			],
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#ff0000"
 			}
 		},
 		{
@@ -3258,7 +3288,7 @@
 			"name": "solidity: scope punctuation {} ",
 			"scope": "source.solidity punctuation.brace.curly",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#ffff5e"
 			}
 		},
 		{
@@ -3513,6 +3543,23 @@
 				"foreground": "#e6a975"
 			}
 		},
+		// {
+		// 	"name": "solidity: punctuation of parameters",
+		// 	"scope": ["source.solidity punctuation.parameters.begin","source.solidity punctuation.parameters.end"],
+		// 	"settings": {
+		// 		"foreground": "#f5cba6"
+		// 	}
+		// },
+		{
+			"name": "solidity: punctuation ` [  ] `",
+			"scope": [
+				"source.solidity punctuation.brace.square.begin",
+				"source.solidity punctuation.brace.square.end"
+			],
+			"settings": {
+				"foreground": "#f5cba6"
+			}
+		},
 		{
 			"name": "Coffeescript Template Definition",
 			"scope": "punctuation.section.embedded.coffee",
@@ -3601,7 +3648,7 @@
 			"name": "solidity: Language Method/Function (`keccak256`, `ecrecover`, etc.)",
 			"scope": "source.solidity support.function",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#bbb6b6"
 			}
 		},
 		{
@@ -3765,7 +3812,7 @@
 				"source.solidity entity.name.function"
 			],
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#dda53c"
 			}
 		},
 		{
@@ -3913,7 +3960,7 @@
 			"name": "solidity: Type Name",
 			"scope": "source.solidity entity.name.type",
 			"settings": {
-				"foreground": "#ffffff"
+				"foreground": "#c0a4ff"
 			}
 		},
 		{
