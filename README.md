@@ -40,5 +40,5 @@ As of 1.0.1, there's a swk-theme too! Color balanced from the Dark version for e
 5. Install extensions to vscode.
 
    ```shell
-   code --install-extension swk-theme-1.0.6.vsix
+   code --install-extension swk-theme-1.0.7.vsix
    ```
