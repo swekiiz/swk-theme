@@ -1629,6 +1629,15 @@
 			}
 		},
 		{
+			"name": "ts: Another variable",
+			"scope": [
+				"variable.other.object.ts"
+			],
+			"settings": {
+				"foreground": "#c4bcad"
+			}
+		},
+		{
 			"name": "Property of Object of Variable",
 			"scope": [
 				"variable.other.object.property"
@@ -1786,15 +1795,6 @@
 				"foreground": "#7ad8c4"
 			}
 		},
-		// {
-		// 	"name": "Another variable",
-		// 	"scope": [
-		// 		"variable.other.object"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#b4aea3"
-		// 	}
-		// },
 		{
 			"name": "Parameter of function",
 			"scope": "variable.parameter",
@@ -1857,6 +1857,15 @@
 			],
 			"settings": {
 				"foreground": "#ff5e5e"
+			}
+		},
+		{
+			"name": "js: Function tagged-template",
+			"scope": [
+				"entity.name.function.tagged-template.js"
+			],
+			"settings": {
+				"foreground": "#5efff7"
 			}
 		},
 		{
@@ -2672,7 +2681,8 @@
 		{
 			"name": "px unit",
 			"scope": [
-				"keyword.other.unit.px"
+				"keyword.other.unit.px",
+				"constant.length.units.css"
 			],
 			"settings": {
 				"foreground": "#e9806d"
@@ -2681,7 +2691,8 @@
 		{
 			"name": "% unit",
 			"scope": [
-				"keyword.other.unit.percentage"
+				"keyword.other.unit.percentage",
+				"constant.percentage.units.css"
 			],
 			"settings": {
 				"foreground": "#6de9b5"
@@ -2799,7 +2810,10 @@
 		},
 		{
 			"name": "support.constant.property-value.scss",
-			"scope": "support.constant.property-value.scss,support.constant.property-value.css",
+			"scope": [
+				"support.constant.property-value.scss",
+				"support.constant.property-value.css"
+			],
 			"settings": {
 				"foreground": "#d1474e"
 			}
@@ -2849,6 +2863,13 @@
 			"scope": "meta.property-list.scss entity.name.tag.reference.scss",
 			"settings": {
 				"foreground": "#d3ff81"
+			}
+		},
+		{
+			"name": "css: ; ",
+			"scope": "punctuation.semi-colon.css",
+			"settings": {
+				"foreground": "#bab6cf"
 			}
 		},
 		{
@@ -3957,6 +3978,16 @@
 			}
 		},
 		{
+			"name": "ts: tsx: Type Name",
+			"scope": [
+				"entity.name.type.ts",
+				"entity.name.type.tsx"
+			],
+			"settings": {
+				"foreground": "#df5b5b"
+			}
+		},
+		{
 			"name": "solidity: Type Name",
 			"scope": "source.solidity entity.name.type",
 			"settings": {
@@ -4373,6 +4404,104 @@
 			"scope": "invalid.illegal.non-null-typehinted.php",
 			"settings": {
 				"foreground": "#ad0900"
+			}
+		},
+		/** --------------------------------------------------------------------------------
+		 *  * graphQL
+		 *  --------------------------------------------------------------------------------
+		 */
+		{
+			"name": "graphql: operation",
+			"scope": "keyword.operation.graphql",
+			"settings": {
+				"foreground": "#e4ff81"
+			}
+		},
+		{
+			"name": "graphql: number",
+			"scope": "constant.numeric.float.graphql",
+			"settings": {
+				"foreground": "#d6fdf7"
+			}
+		},
+		{
+			"name": "graphql: function",
+			"scope": "entity.name.function.graphql",
+			"settings": {
+				"foreground": "#db7bf8"
+			}
+		},
+		{
+			"name": "graphql: variable",
+			"scope": "variable.graphql",
+			"settings": {
+				"foreground": "#b3739a"
+			}
+		},
+		{
+			"name": "graphql: parameter",
+			"scope": "variable.parameter.graphql",
+			"settings": {
+				"foreground": "#ff6bb5"
+			}
+		},
+		{
+			"name": "graphql: type",
+			"scope": "support.type.graphql",
+			"settings": {
+				"foreground": "#e5f17a"
+			}
+		},
+		{
+			"name": "graphql: build in type",
+			"scope": "support.type.builtin.graphql",
+			"settings": {
+				"foreground": "#f1b07a"
+			}
+		},
+		{
+			"name": "graphql: nulltype !",
+			"scope": "keyword.operator.nulltype.graphql",
+			"settings": {
+				"foreground": "#ff1010"
+			}
+		},
+		{
+			"name": "graphql: ( )",
+			"scope": [
+				"meta.brace.round.graphql",
+				"meta.brace.round.directive.graphql"
+			],
+			"settings": {
+				"foreground": "#f1ef7a"
+			}
+		},
+		{
+			"name": "graphql: scope { }",
+			"scope": "punctuation.operation.graphql",
+			"settings": {
+				"foreground": "#b3b6ce"
+			}
+		},
+		{
+			"name": "graphql: punctuation { }",
+			"scope": "meta.brace.curly.graphql",
+			"settings": {
+				"foreground": "#f1ef7a"
+			}
+		},
+		{
+			"name": "graphql: colon (`,`)",
+			"scope": "punctuation.comma.graphql",
+			"settings": {
+				"foreground": "#cc6c6c"
+			}
+		},
+		{
+			"name": "graphql: colon (`:`)",
+			"scope": "punctuation.colon.graphql",
+			"settings": {
+				"foreground": "#67dfa7"
 			}
 		},
 		/** --------------------------------------------------------------------------------
