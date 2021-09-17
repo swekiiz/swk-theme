@@ -101,7 +101,7 @@
 				"source.solidity",
 			],
 			"settings": {
-				"foreground": "#9b65ce"
+				"foreground": "#ebe4f1"
 			}
 		},
 		{
@@ -821,7 +821,7 @@
 			"name": "solidity: Accessor Operator (`.`)",
 			"scope": "source.solidity punctuation.accessor",
 			"settings": {
-				"foreground": "#a3ca70"
+				"foreground": "#f32d8a"
 			}
 		},
 		{
@@ -1419,7 +1419,7 @@
 			"name": "solidity: `this` keyword",
 			"scope": "source.solidity variable.language.this",
 			"settings": {
-				"foreground": "#009e69"
+				"foreground": "#ff5e00"
 			}
 		},
 		{
@@ -1516,7 +1516,7 @@
 			"name": "solidity: struct keyword",
 			"scope": "source.solidity storage.type.struct",
 			"settings": {
-				"foreground": "#459b8c"
+				"foreground": "#4dcab5"
 			}
 		},
 		{
@@ -1929,7 +1929,7 @@
 			"name": "solidity: library name",
 			"scope": "source.solidity entity.name.type.library",
 			"settings": {
-				"foreground": "#5770ff"
+				"foreground": "#657bfc"
 			}
 		},
 		{
@@ -2094,7 +2094,7 @@
 			"name": "solidity: builtin types",
 			"scope": "source.solidity support.type.primitive",
 			"settings": {
-				"foreground": "#c0a4ff"
+				"foreground": "#b294fa"
 			}
 		},
 		{
@@ -2171,7 +2171,7 @@
 			"name": "solidity: contract extend name",
 			"scope": "source.solidity entity.name.type.contract.extend",
 			"settings": {
-				"foreground": "#5770ff"
+				"foreground": "#657bfc"
 			}
 		},
 		{
@@ -3960,7 +3960,7 @@
 			"name": "solidity: Type Name",
 			"scope": "source.solidity entity.name.type",
 			"settings": {
-				"foreground": "#c0a4ff"
+				"foreground": "#a8cf4d"
 			}
 		},
 		{
