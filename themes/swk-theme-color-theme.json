@@ -316,6 +316,15 @@
 			}
 		},
 		{
+			"name": "graphql: string double quoted",
+			"scope": [
+				"string.quoted.double.graphql"
+			],
+			"settings": {
+				"foreground": "#ccaddd"
+			}
+		},
+		{
 			"name": "F#: string double quoted",
 			"scope": [
 				"string.quoted.double.fsharp"
