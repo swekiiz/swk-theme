@@ -229,6 +229,13 @@
 			}
 		},
 		{
+			"name": "toml: string single quoted",
+			"scope": "source.toml string.quoted.single",
+			"settings": {
+				"foreground": "#abcdef"
+			}
+		},
+		{
 			"name": "String double quoted",
 			"scope": "meta.var.expr string.quoted.double",
 			"settings": {
@@ -716,7 +723,7 @@
 				"source.reason string.double string.regexp"
 			],
 			"settings": {
-				"foreground": "#fff45e"
+				"foreground": "#d8ee59"
 			}
 		},
 		/** --------------------------------------------------------------------------------
@@ -837,7 +844,7 @@
 				"keyword.operator.accessor"
 			],
 			"settings": {
-				"foreground": "#ff379b"
+				"foreground": "#ff5dae"
 			}
 		},
 		{
@@ -915,6 +922,15 @@
 			],
 			"settings": {
 				"foreground": "#ff3e2e"
+			}
+		},
+		{
+			"name": "toml: operator.assignment ( = )",
+			"scope": [
+				"punctuation.definition.keyValuePair.toml"
+			],
+			"settings": {
+				"foreground": "#beffbc"
 			}
 		},
 		{
@@ -1641,6 +1657,15 @@
 			}
 		},
 		{
+			"name": "re: module keyword",
+			"scope": [
+				"source.reason storage.type message.error",
+			],
+			"settings": {
+				"foreground": "#d0ff00"
+			}
+		},
+		{
 			"name": "re: keyword",
 			"scope": [
 				"source.reason keyword.control",
@@ -1655,7 +1680,7 @@
 				"source.reason keyword.control.less",
 			],
 			"settings": {
-				"foreground": "#ff5eaf"
+				"foreground": "#ff44aa"
 			}
 		},
 		{
@@ -3680,10 +3705,24 @@
 			}
 		},
 		{
+			"name": "toml: punctuation ` [  ] `",
+			"scope": "punctuation.definition.table.toml",
+			"settings": {
+				"foreground": "#ff7700"
+			}
+		},
+		{
+			"name": "toml: punctuation ` [[  ]] `",
+			"scope": "punctuation.definition.table.array.toml",
+			"settings": {
+				"foreground": "#686fd6"
+			}
+		},
+		{
 			"name": "Coffeescript Template Definition",
 			"scope": "punctuation.section.embedded.coffee",
 			"settings": {
-				"foreground": "#D08442"
+				"foreground": "#ff7700"
 			}
 		},
 		// {
@@ -4249,6 +4288,13 @@
 			}
 		},
 		{
+			"name": "toml: Attributes",
+			"scope": "source.toml entity.other.attribute-name",
+			"settings": {
+				"foreground": "#ffc400"
+			}
+		},
+		{
 			"name": "Attribute IDs",
 			"scope": "entity.other.attribute-name.id",
 			"settings": {
@@ -4330,6 +4376,15 @@
 			],
 			"settings": {
 				"foreground": "#C9E9E0"
+			}
+		},
+		{
+			"name": "re: Link",
+			"scope": [
+				"source.reason string.other.link"
+			],
+			"settings": {
+				"foreground": "#77ffd9"
 			}
 		},
 		{
@@ -4661,7 +4716,7 @@
 			"name": "re: property other reg",
 			"scope": "source.reason support.type string.regexp",
 			"settings": {
-				"foreground": "#e06bd1"
+				"foreground": "#d390ff"
 			}
 		},
 		{
