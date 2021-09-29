@@ -105,6 +105,13 @@
 			}
 		},
 		{
+			"name": "re: source",
+			"scope": "source.reason",
+			"settings": {
+				"foreground": "#c3c8f1"
+			}
+		},
+		{
 			"name": "cabal: source",
 			"scope": [
 				"source.cabal",
@@ -263,6 +270,13 @@
 			"scope": "source.solidity string.quoted.double",
 			"settings": {
 				"foreground": "#e2f59d"
+			}
+		},
+		{
+			"name": "vcl: string double quoted",
+			"scope": "string.quoted.double.vcl",
+			"settings": {
+				"foreground": "#be69f0"
 			}
 		},
 		{
@@ -685,6 +699,15 @@
 			],
 			"settings": {
 				"foreground": "#ff5e5e"
+			}
+		},
+		{
+			"name": "re: string double reg",
+			"scope": [
+				"source.reason string.double string.regexp"
+			],
+			"settings": {
+				"foreground": "#fff45e"
 			}
 		},
 		/** --------------------------------------------------------------------------------
@@ -1609,6 +1632,33 @@
 			}
 		},
 		{
+			"name": "re: keyword",
+			"scope": [
+				"source.reason keyword.control",
+			],
+			"settings": {
+				"foreground": "#a68fff"
+			}
+		},
+		{
+			"name": "re: keyword less",
+			"scope": [
+				"source.reason keyword.control.less",
+			],
+			"settings": {
+				"foreground": "#ff5eaf"
+			}
+		},
+		{
+			"name": "re: keyword other",
+			"scope": [
+				"source.reason keyword.other",
+			],
+			"settings": {
+				"foreground": "#b4fdbd"
+			}
+		},
+		{
 			"name": "cabal: keyword",
 			"scope": [
 				"keyword.other.cabal",
@@ -1857,6 +1907,13 @@
 			],
 			"settings": {
 				"foreground": "#ff5e5e"
+			}
+		},
+		{
+			"name": "re: Parameter of function ` ",
+			"scope": "source.reason variable.parameter",
+			"settings": {
+				"foreground": "#2bff00"
 			}
 		},
 		{
@@ -2200,7 +2257,14 @@
 			}
 		},
 		{
-			"name": "php types",
+			"name": "re: storage type",
+			"scope": "source.reason storage.type",
+			"settings": {
+				"foreground": "#6ada98"
+			}
+		},
+		{
+			"name": "php: types",
 			"scope": "storage.type.php,meta.other.type.phpdoc.php,keyword.other.type.php,keyword.other.array.phpdoc.php",
 			"settings": {
 				"foreground": "#fffb2a"
@@ -2530,6 +2594,13 @@
 			}
 		},
 		{
+			"name": "vcl: Number",
+			"scope": "constant.numeric.time.vcl",
+			"settings": {
+				"foreground": "#ffb865"
+			}
+		},
+		{
 			"name": "elixir: number",
 			"scope": [
 				"constant.numeric.elixir"
@@ -2543,6 +2614,15 @@
 			"scope": "constant.numeric.cabal",
 			"settings": {
 				"foreground": "#ffb865"
+			}
+		},
+		{
+			"name": "re: number",
+			"scope": [
+				"source.reason constant.numeric"
+			],
+			"settings": {
+				"foreground": "#c3b3dd"
 			}
 		},
 		{
@@ -2575,6 +2655,15 @@
 			],
 			"settings": {
 				"foreground": "#ff0000"
+			}
+		},
+		{
+			"name": "re: Language Constant",
+			"scope": [
+				"source.reason constant.language constant.numeric"
+			],
+			"settings": {
+				"foreground": "#d86262"
 			}
 		},
 		{
@@ -3718,6 +3807,15 @@
 			}
 		},
 		{
+			"name": "re: functions",
+			"scope": [
+				"source.reason entity.name.function",
+			],
+			"settings": {
+				"foreground": "#ffe999"
+			}
+		},
+		{
 			"name": "c#: functions",
 			"scope": [
 				"entity.name.function.cs",
@@ -3897,6 +3995,13 @@
 			"scope": "entity.name.class.identifier.namespace.type",
 			"settings": {
 				"foreground": "#ff5e5e"
+			}
+		},
+		{
+			"name": "re: Class name",
+			"scope": "source.reason entity.name.class",
+			"settings": {
+				"foreground": "#5ea1e0"
 			}
 		},
 		{
@@ -4530,6 +4635,84 @@
 			"scope": "token.debug-token",
 			"settings": {
 				"foreground": "#b267e6"
+			}
+		},
+		/** --------------------------------------------------------------------------------
+		*  * ReasonML
+		*  --------------------------------------------------------------------------------
+		*/
+		{
+			"name": "re: property",
+			"scope": "source.reason support.property-value entity.name.filename",
+			"settings": {
+				"foreground": "#d8b147"
+			}
+		},
+		{
+			"name": "re: property other reg",
+			"scope": "source.reason support.type string.regexp",
+			"settings": {
+				"foreground": "#e06bd1"
+			}
+		},
+		{
+			"name": "re: message error",
+			"scope": "source.reason message.error",
+			"settings": {
+				"foreground": "#ffa600"
+			}
+		},
+		/** --------------------------------------------------------------------------------
+		 *  * VCL
+		 *  --------------------------------------------------------------------------------
+		 */
+		{
+			"name": "vcl: keyword",
+			"scope": "source.varnish.vcl keyword",
+			"settings": {
+				"foreground": "#ff8800"
+			}
+		},
+		{
+			"name": "vcl: keyword control",
+			"scope": "source.varnish.vcl keyword.control",
+			"settings": {
+				"foreground": "#6cebba"
+			}
+		},
+		{
+			"name": "vcl: meta backend",
+			"scope": "source.varnish.vcl meta.backend.vcl",
+			"settings": {
+				"foreground": "#ffcb6b"
+			}
+		},
+		{
+			"name": "vcl: function",
+			"scope": "entity.name.function.vcl",
+			"settings": {
+				"foreground": "#bbd642"
+			}
+		},
+		{
+			"name": "vcl: meta control",
+			"scope": "meta.control.vcl",
+			"settings": {
+				"foreground": "#dfccd9"
+			}
+		},
+		{
+			"name": "vcl: meta sub",
+			"scope": "meta.sub.vcl",
+			"settings": {
+				"foreground": "#7785d3"
+			}
+		},
+		{
+			"name": "vcl: ttl",
+			"scope": "support.other.ttl.vcl",
+			"settings": {
+				"foreground": "#ffe96e"
 			}
 		},
 		// {
