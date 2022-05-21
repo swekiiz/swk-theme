@@ -2502,20 +2502,29 @@
 			}
 		},
 		{
-			"name": "TS primitive/builtin types",
+			"name": "ts: primitive/builtin types",
 			"scope": "support.type.primitive.ts,support.type.builtin.ts,support.type.primitive.tsx,support.type.builtin.tsx",
 			"settings": {
 				"foreground": "#e6cda2"
 			}
 		},
 		{
-			"name": "TS punctuation type <type>",
+			"name": "ts: punctuation type <type>",
 			"scope": [
 				"punctuation.definition.typeparameters.begin",
 				"punctuation.definition.typeparameters.end"
 			],
 			"settings": {
 				"foreground": "#6777be"
+			}
+		},
+		{
+			"name": "ts: property of type declaration",
+			"scope": [
+				"meta.type.declaration.ts variable.object.property.ts",
+			],
+			"settings": {
+				"foreground": "#e7d2e9"
 			}
 		},
 		{
@@ -2775,9 +2784,26 @@
 			}
 		},
 		/** --------------------------------------------------------------------------------
-		 *  * CSS, SCSS, LESS
+		 *  * Decorator
 		 *  --------------------------------------------------------------------------------
 		 */
+		{
+			"name": "python: function decorator @",
+			"scope": "meta.function.decorator.python",
+			"settings": {
+				"foreground": "#61afef"
+			}
+		},
+		{
+			"scope": "meta.decorator.ts meta.function-call.ts entity.name.function.ts",
+			"settings": {
+				"foreground": "#D68D5B" // d6bb5b
+			}
+		},
+		/** --------------------------------------------------------------------------------
+		*  * CSS, SCSS, LESS
+		*  --------------------------------------------------------------------------------
+		*/
 		{
 			"name": "CSS/SCSS/LESS Operators",
 			"scope": "keyword.operator.css,keyword.operator.scss,keyword.operator.less",
@@ -4025,10 +4051,27 @@
 			}
 		},
 		{
-			"name": "Classes ex. JSX tags",
-			"scope": "support.class, entity.name.type.class",
+			"name": "JSX tags",
+			"scope": "support.class",
 			"settings": {
 				"foreground": "#B8FCB1"
+			}
+		},
+		{
+			"name": "Classes",
+			"scope": "entity.name.type.class",
+			"settings": {
+				"foreground": "#B8FCB1"
+			}
+		},
+		{
+			"name": "ts: tsx: Classes",
+			"scope": [
+				"entity.name.type.class.ts",
+				"entity.name.type.class.tsx"
+			],
+			"settings": {
+				"foreground": "#B8F0B1"
 			}
 		},
 		{
@@ -4723,7 +4766,77 @@
 			"name": "re: message error",
 			"scope": "source.reason message.error",
 			"settings": {
-				"foreground": "#ffa600"
+				"foreground": "#ffa601"
+			}
+		},
+		/** --------------------------------------------------------------------------------
+		*  * Prisma
+		*  --------------------------------------------------------------------------------
+		*/
+		{
+			"name": "prisma: string",
+			"scope": "string.quoted.double.prisma",
+			"settings": {
+				"foreground": "#8fe0dc"
+			}
+		},
+		{
+			"name": "prisma: double quoted",
+			"scope": [
+				"string.quoted.double.start.prisma",
+				"string.quoted.double.end.prisma"
+			],
+			"settings": {
+				"foreground": "#a7a39a"
+			}
+		},
+		{
+			"name": "prisma: storage type",
+			"scope": "storage.type.config.prisma",
+			"settings": {
+				"foreground": "#9a9c2b"
+			}
+		},
+		{
+			"name": "prisma: primitive type",
+			"scope": "support.type.primitive.prisma",
+			"settings": {
+				"foreground": "#a068df"
+			}
+		},
+		{
+			"name": "prisma: model keyword",
+			"scope": "storage.type.model.prisma",
+			"settings": {
+				"foreground": "#ffbd15"
+			}
+		},
+		{
+			"name": "prisma: entity name",
+			"scope": "entity.name.type.config.prisma",
+			"settings": {
+				"foreground": "#f16145"
+			}
+		},
+		{
+			"name": "prisma: model entity name",
+			"scope": "entity.name.type.model.prisma",
+			"settings": {
+				"foreground": "#4995ff"
+			}
+		},
+		{
+			"name": "prisma: function",
+			"scope": "entity.name.function.attribute.prisma",
+			"settings": {
+				"foreground": "#b1cba7"
+			}
+		},
+		{
+			"name": "prisma: variable",
+			"scope": "variable.other.assignment.prisma",
+			"settings": {
+				"foreground": "#c2c6da"
 			}
 		},
 		/** --------------------------------------------------------------------------------
@@ -5107,13 +5220,6 @@
 		// 	"scope": "keyword.operator.heredoc.php,keyword.operator.nowdoc.php",
 		// 	"settings": {
 		// 		"foreground": "#c678dd"
-		// 	}
-		// },
-		// {
-		// 	"name": "python function decorator @",
-		// 	"scope": "meta.function.decorator.python",
-		// 	"settings": {
-		// 		"foreground": "#61afef"
 		// 	}
 		// },
 		// {
