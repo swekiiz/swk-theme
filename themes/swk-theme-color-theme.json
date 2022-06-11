@@ -89,6 +89,15 @@
 			}
 		},
 		{
+			"name": "dockerfile: Default Text",
+			"scope": [
+				"source.dockerfile"
+			],
+			"settings": {
+				"foreground": "#c39e9e"
+			}
+		},
+		{
 			"name": "haskell: source",
 			"scope": "source.haskell",
 			"settings": {
@@ -139,6 +148,15 @@
 				"foreground": "#75b7a6"
 			}
 		},
+		{
+			"name": "go.sum: source",
+			"scope": [
+				"go.sum",
+			],
+			"settings": {
+				"foreground": "#cdcd6d"
+			}
+		},
 		/** --------------------------------------------------------------------------------
 		 *  * Comments
 		 *  --------------------------------------------------------------------------------
@@ -175,6 +193,13 @@
 			"scope": "source.ts comment.line.triple-slash.directive.ts meta.tag.ts punctuation.definition.tag.directive.ts",
 			"settings": {
 				"foreground": "#61abff",
+			}
+		},
+		{
+			"name": "prisma: comment",
+			"scope": "comment.prisma",
+			"settings": {
+				"foreground": "#786666",
 			}
 		},
 		{
@@ -321,6 +346,13 @@
 			}
 		},
 		{
+			"name": "go: import string double quoted",
+			"scope": "string.quoted.double.go entity.name.import.go",
+			"settings": {
+				"foreground": "#e3c255"
+			}
+		},
+		{
 			"name": "php: string double quoted",
 			"scope": [
 				"source.php string.quoted.double.php"
@@ -420,6 +452,15 @@
 			}
 		},
 		{
+			"name": "dockerfile: string double quoted",
+			"scope": [
+				"string.quoted.double.dockerfile"
+			],
+			"settings": {
+				"foreground": "#6ebbae"
+			}
+		},
+		{
 			"name": "shell: string double quoted",
 			"scope": "string.quoted.double.shell",
 			"settings": {
@@ -491,6 +532,20 @@
 			"scope": "string.unquoted",
 			"settings": {
 				"foreground": "#f7c376"
+			}
+		},
+		{
+			"name": "go.mod: String unquoted",
+			"scope": "go.mod string.unquoted.go.mod",
+			"settings": {
+				"foreground": "#806c98"
+			}
+		},
+		{
+			"name": "go.sum: String unquoted",
+			"scope": "go.sum string.unquoted.go.sum",
+			"settings": {
+				"foreground": "#6291b1"
 			}
 		},
 		{
@@ -777,6 +832,13 @@
 			}
 		},
 		{
+			"name": "go.mod: Keywords",
+			"scope": "go.mod keyword.go.mod",
+			"settings": {
+				"foreground": "#e4ad34"
+			}
+		},
+		{
 			"name": "Operators",
 			"scope": "keyword.operator",
 			"settings": {
@@ -955,7 +1017,7 @@
 				"punctuation.definition.keyValuePair.toml"
 			],
 			"settings": {
-				"foreground": "#beffbc"
+				"foreground": "#affdae"
 			}
 		},
 		{
@@ -1031,6 +1093,13 @@
 			}
 		},
 		{
+			"name": "go: import keyword",
+			"scope": "keyword.import.go",
+			"settings": {
+				"foreground": "#afce86"
+			}
+		},
+		{
 			"name": "solidity: import keyword",
 			"scope": "source.solidity keyword.control.import",
 			"settings": {
@@ -1073,7 +1142,7 @@
 			}
 		},
 		{
-			"name": "TS type operator",
+			"name": "ts: type operator",
 			"scope": "keyword.operator.type",
 			"settings": {
 				"foreground": "#ff5e5e"
@@ -1621,6 +1690,24 @@
 			}
 		},
 		{
+			"name": "go: package keyword",
+			"scope": [
+				"keyword.package.go"
+			],
+			"settings": {
+				"foreground": "#77ca8f"
+			}
+		},
+		{
+			"name": "c++: output keyword",
+			"scope": [
+				"support.function.construct.output.php"
+			],
+			"settings": {
+				"foreground": "#afce86"
+			}
+		},
+		{
 			"name": "solidity: constructor keyword",
 			"scope": [
 				"source.solidity storage.type.constructor",
@@ -1760,6 +1847,15 @@
 			],
 			"settings": {
 				"foreground": "#ffc800"
+			}
+		},
+		{
+			"name": "shell: `#!`",
+			"scope": [
+				"punctuation.definition.comment.shebang.shell",
+			],
+			"settings": {
+				"foreground": "#555556"
 			}
 		},
 		/** --------------------------------------------------------------------------------
@@ -2478,7 +2574,7 @@
 				"entity.name.package.go"
 			],
 			"settings": {
-				"foreground": "#d14809"
+				"foreground": "#d44809"
 			}
 		},
 		{
@@ -4855,7 +4951,7 @@
 			"name": "prisma: storage type",
 			"scope": "storage.type.config.prisma",
 			"settings": {
-				"foreground": "#9a9c2b"
+				"foreground": "#b0b329"
 			}
 		},
 		{
@@ -4898,6 +4994,27 @@
 			"scope": "variable.other.assignment.prisma",
 			"settings": {
 				"foreground": "#c2c6da"
+			}
+		},
+		{
+			"name": "prisma: enum keyword",
+			"scope": "storage.type.enum.prisma",
+			"settings": {
+				"foreground": "#a3d000"
+			}
+		},
+		{
+			"name": "prisma: type",
+			"scope": "entity.name.type.enum.prisma",
+			"settings": {
+				"foreground": "#a068df"
+			}
+		},
+		{
+			"name": "prisma: parameter",
+			"scope": "variable.parameter.key.prisma",
+			"settings": {
+				"foreground": "#ff65b2"
 			}
 		},
 		/** --------------------------------------------------------------------------------
