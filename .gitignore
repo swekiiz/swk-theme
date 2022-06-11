@@ -2,3 +2,4 @@ node_modules
 *.vsix
 
 themes/deepdark.jsonc
+.DS_Store
