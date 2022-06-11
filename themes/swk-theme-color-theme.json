@@ -130,6 +130,15 @@
 				"foreground": "#c5e9d8"
 			}
 		},
+		{
+			"name": "wsd: source",
+			"scope": [
+				"source.wsd",
+			],
+			"settings": {
+				"foreground": "#75b7a6"
+			}
+		},
 		/** --------------------------------------------------------------------------------
 		 *  * Comments
 		 *  --------------------------------------------------------------------------------
@@ -141,7 +150,7 @@
 				"punctuation.definition.comment"
 			],
 			"settings": {
-				"foreground": "#808080"
+				"foreground": "#7f7f80"
 			}
 		},
 		{
@@ -166,6 +175,13 @@
 			"scope": "source.ts comment.line.triple-slash.directive.ts meta.tag.ts punctuation.definition.tag.directive.ts",
 			"settings": {
 				"foreground": "#61abff",
+			}
+		},
+		{
+			"name": "wsd: comment",
+			"scope": "comment.line.comment.source.wsd",
+			"settings": {
+				"foreground": "#686a87",
 			}
 		},
 		{
@@ -724,6 +740,15 @@
 			],
 			"settings": {
 				"foreground": "#d8ee59"
+			}
+		},
+		{
+			"name": "wsd: value",
+			"scope": [
+				"meta.comment.message.link.source.wsd"
+			],
+			"settings": {
+				"foreground": "#ba81f3"
 			}
 		},
 		/** --------------------------------------------------------------------------------
@@ -1699,6 +1724,42 @@
 			],
 			"settings": {
 				"foreground": "#616cd1"
+			}
+		},
+		{
+			"name": "wsd: keyword",
+			"scope": [
+				"source.wsd keyword",
+			],
+			"settings": {
+				"foreground": "#e14d81"
+			}
+		},
+		{
+			"name": "wsd: keyword",
+			"scope": [
+				"source.wsd keyword.control",
+			],
+			"settings": {
+				"foreground": "#f7a00a"
+			}
+		},
+		{
+			"name": "wsd: order keyword",
+			"scope": [
+				"source.wsd keyword.other.other.source.wsd",
+			],
+			"settings": {
+				"foreground": "#a9d01b"
+			}
+		},
+		{
+			"name": "wsd: ->",
+			"scope": [
+				"keyword.control.note.source.wsd",
+			],
+			"settings": {
+				"foreground": "#ffc800"
 			}
 		},
 		/** --------------------------------------------------------------------------------
@@ -2979,13 +3040,13 @@
 				"foreground": "#69f0ae"
 			}
 		},
-		{
-			"name": "At Rule Default Parameter Numeric Value (`@function pxToRem($number, $base: 14)`)",
-			"scope": [
-				"meta.at-rule.mixin constant.numeric",
-				"meta.at-rule.function constant.numeric"
-			]
-		},
+		// {
+		// 	"name": "At Rule Default Parameter Numeric Value (`@function pxToRem($number, $base: 14)`)",
+		// 	"scope": [
+		// 		"meta.at-rule.mixin constant.numeric",
+		// 		"meta.at-rule.function constant.numeric"
+		// 	]
+		// },
 		// {
 		// 	"name": "Control Elements",
 		// 	"scope": "control.elements, keyword.operator.less",
