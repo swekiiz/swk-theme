@@ -20,25 +20,25 @@ As of 1.0.1, there's a swk-theme too! Color balanced from the Dark version for e
 
 2. clone this repository to local
 
-   ```shell
-   git clone https://github.com/swekiiz/swk-theme.git
-   cd swe-theme
-   ```
+    ```shell
+    git clone https://github.com/swekiiz/swk-theme.git
+    cd swk-theme
+    ```
 
 3. Install **vsce** (_Visual Studio Code Extensions_) by `npm` or `yarn`.
 
-   ```shell
-   npm i -g vsce
-   ```
+    ```shell
+    npm i -g vsce
+    ```
 
 4. Package the extensions.
 
-   ```shell
-   vsce package
-   ```
+    ```shell
+    vsce package
+    ```
 
 5. Install extensions to vscode.
 
-   ```shell
-   code --install-extension swk-theme-1.0.8.vsix
-   ```
+    ```shell
+    code --install-extension swk-theme-1.0.8.vsix
+    ```
